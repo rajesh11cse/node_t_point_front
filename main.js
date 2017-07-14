@@ -1,5 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './header.jsx';
 import App from './App.jsx';
+import Home from './home.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+import {Router, Route, IndexRoute, hashHistory } from 'react-router';
+
+
+   ReactDOM.render((
+   <Router history = {hashHistory}>
+      <Route path = "/" component = {Header}>
+         <IndexRoute component = {Home} />
+         <Route path = "/home" component = {Home} />
+
+      </Route>
+   </Router>
+	
+), document.getElementById('app'))
+
+
+// https://pocotan001.github.io/react-styleguide-generator/#!.

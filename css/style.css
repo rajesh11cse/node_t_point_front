@@ -1,0 +1,22 @@
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 12px;
+    color: #fff;
+}
+
+/*https://stackoverflow.com/questions/16625972/change-color-of-bootstrap-navbar-on-hover-link*/
+.navbar-default .navbar-nav > li > a:hover{
+    background-color:#f43333;
+    color: white;
+}
+
+
+.activeLink{
+     background-color:grey;
+     color: black
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-left: -1px;
+ }
