@@ -9,8 +9,12 @@
 .navbar-default .navbar-nav > li > a:hover{
     background-color:#f43333;
     color: white;
-}
+} 
 
+.navbar-default .navbar-nav > li >a:active { 
+    color: white;
+    background-color : #808080;
+}
 
 .activeLink{
      background-color:grey;
@@ -39,4 +43,21 @@
 
 #myBtn:hover {
   background-color: #555;
+}
+
+.headerSearch{
+    margin-top: -43px;
+    margin-bottom:-70px;  
+    margin-right:-90px;
+}
+.header-text-box {
+    -webkit-border-radius: 0px;
+       -moz-border-radius: 0px;
+            border-radius: 0;
+            background-color: transparent;
+            color : white;
+}
+
+.header-search-icon{
+    cursor:pointer;
 }

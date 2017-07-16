@@ -33,11 +33,6 @@ class Header extends React.Component {
             e.preventDefault();
             $('body,html').animate({scrollTop:0},200);
         });
-       // document.body.scrollTop = 0;
-      // document.documentElement.scrollTop = 0;
-
-// When the user clicks on the button, scroll to the top of the document
-    
     }
 
 
@@ -104,15 +99,24 @@ class Header extends React.Component {
                     </NavDropdown>
                 </Nav>
                 <Nav pullRight>
-                    {/*<input type="text"/>*/}
+                    <div className="col-md-3 pull-right headerSearch">
+                        <div className="form-group">
+                            <div className="input-group">
+                                <input type="text" className="form-control header-text-box" placeholder="Search" id="inputGroup"/>
+                                <span className="input-group-addon">
+                                    <i className="glyphicon glyphicon-search header-search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
             <div style={{ backgroundColor: "grey", marginTop:'-20px', padding:'10px'}}>
                 <center style={{fontSize: "75px", fontWeight: "bold", 
-                fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>nodeTpoint</center>
+                fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</center>
                 <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
-                fontWeight: "normal"}} >test your khowledge</center>
+                fontWeight: "normal"}} >raise your khowledge</center>
             </div>
         </section>
 
