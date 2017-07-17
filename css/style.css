@@ -61,3 +61,23 @@
 .header-search-icon{
     cursor:pointer;
 }
+
+
+.totorial_heading{
+    padding:5px;
+    color:grey;
+    font-family:Arial;
+    word-spacing:5px;
+    background-color: #f4f4f4;
+    border: 1px solid #eae8e8;
+}
+
+.totorial_heading:hover{
+    background-color: #eae8e8;
+}
+
+.totorial_heading > a{
+    color: green;
+    text-decoration: underline;
+    font-size: 15px;
+}

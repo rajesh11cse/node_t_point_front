@@ -4,6 +4,9 @@ import Header from './header.jsx';
 import App from './App.jsx';
 import Home from './home.jsx';
 
+
+import NodeJsIntroduction from './nodejs/introduction.jsx';
+
 import {Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 
@@ -12,8 +15,9 @@ import {Router, Route, IndexRoute, hashHistory } from 'react-router';
       <Route path = "/" component = {Header}>
          <IndexRoute component = {Home} />
          <Route path = "/home" component = {Home} />
-
+        
       </Route>
+       <Route path = "/nodejs/introduction" component = {NodeJsIntroduction} />
    </Router>
 	
 ), document.getElementById('app'))

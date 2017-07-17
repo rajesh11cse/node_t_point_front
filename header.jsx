@@ -56,7 +56,7 @@ class Header extends React.Component {
           <button id="myBtn" title="Go to top">Top</button>
 
           <section>
-            <Navbar default collapseOnSelect style={{background : '#3d3f3f', border:'none', 
+            <Navbar default collapseOnSelect style={{background : 'black', border:'none', 
             borderTopRightRadius:'0px', borderTopLeftRadius:'0px', 
             borderBottomRightRadius:'0px', borderBottomLeftRadius:'0px', boxShadow: 'none' 
             }}>
@@ -122,52 +122,81 @@ class Header extends React.Component {
 
         <section className="row">
                 <div className="col-md-12">
-                    <article className="col-md-9">
+                    <article className="col-md-9" style={{backgroundColor:'white'}}>
+                        <div className="col-md-12">
                         <header>
-                            <h1>AngularJS Tutorial</h1>
+                            <h1 style={{color:'#605e5e'}}>NodeJs Tutorial<span className="pull-right" style={{color:'grey', fontSize:'15px'}}>Updated on : 17 July 2017</span> </h1>
                         </header>
-                        <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a href="https://angularjs.org/" style={{color:'green'}}>AngularJS</a> is the insanely popular Javascript MVC/MVVM framework developed by Misko Hevery at Google. It has changed the way we develop client side applications, by providing the possibilities to apply the best practices usually applied on server side like modular programming, separation of concerns, testability and many more, on  client side. Advantages are many fold increase in productivity, smooth learning curve for the developers, plain HTML to work with for Designers and finally, possibility to easily integrating with other popular libraries.<br />
-                        <img src="http://websystique.com/wp-content/uploads/2015/09/AngularJS-large.png" alt="AngularJS-large" width="383" height="108" className="aligncenter size-full wp-image-1939" /><br />
-                        This AngularJS Tutorial series is based on <code>AngularJS 1.4.4</code>.</p>
-                        <hr/>
-                        <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-introduction/">AngularJS Introduction</a><br />
-                        What is AngularJS and what can it do for us.</p>
-                        <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
-                         <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a style={{color:'green'}} href="http://websystique.com/angularjs/angularjs-hello-world-example/">AngularJS Hello World Example</a><br />
-                        Classic Hello World with AngularJS.</p>
+                        <p style={{color:'grey', fontFamily:'Arial', wordSpacing:'5px'}}><a target="#" href="https://nodejs.org/en/" 
+                        style={{color:'green'}}>NodeJs</a> Node.js is an open-source server side runtime environment built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side applications using JavaScript.
 
+ This tutorial will help you learn the all topics of Node.js such as Node.js installations, exapmles, REPL, 
+ nodejs modules, NPM, web servers, global objects, nodejs debuggers, EventEmitter,  database conection with mongodb and many more.<br />
+                        <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/07/1436439824nodejs-logo.png" 
+                        alt="NodeJS-large" width="383" height="160" className="" /><br />
+                        Curernt version of Node.js <code>Nodejs 8.1.4</code>.</p>
+                        <hr/>
+
+
+
+                        <p className="totorial_heading">
+                            <a target="_black" href="#/nodejs/introduction">NodeJs Introduction</a><br />
+                        What is NodeJs and how is it useful for us.</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Environment Setup</a><br />
+                        Install and setup an environment for on defferent platforms</p>
+
+                         <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Hello World Example</a><br />
+                       Classic Hello World with NodeJS.</p>
+
+                       <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Console(REPL)</a><br />
+                       Classic methods like console.log(), console.error(), console.warn() and Read Eval Print and Loop.</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Module</a><br />
+                       Node.js includes three types of modules Core Modules, Local Modules and Third Party Modules</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js module.exports</a><br />
+                       How module.exports works in NodeJs</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node Package Manager (NPM)</a><br />
+                       What is the NPM and What is the need of NPM in Node.js</p>
+
+                       <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Web Server</a><br />
+                        What is Node.js web server and How to handle HTTP requests in NodeJs</p>
+
+                         <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Global Objects</a><br />
+                        What are Node.js global objects and Why we eeded of these variables.</p>
+
+                           <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Debugger</a><br />
+                        How to debug a nodejs application and tools to debug the application.</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js EventEmitter</a><br />
+                        EventEmitter Object in NodeJS.</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">MongoDB in Node.js</a><br />
+                        Use MongoDb database in your NodeJS application</p>
+
+                        <p className="totorial_heading">
+                            <a style={{color:'green'}} href="">Node.js Useful Resources</a><br />
+                        Node.js Useful Resources</p>
+
+                        </div>
                     </article>
-                    <div className="col-md-3">
-                    Ads..
+                    
+                    <div className="col-md-3" style={{marginTop:'20px'}}>
+                    <img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>
+                    <img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>
                     </div>
                 </div>
                 <div className="col-md-12">
