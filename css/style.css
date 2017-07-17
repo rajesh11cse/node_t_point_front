@@ -74,10 +74,34 @@
 
 .totorial_heading:hover{
     background-color: #eae8e8;
+    border: 1px solid #dbdbdb;
 }
 
+.totorial_question{
+    padding:5px;
+    color:#3f3d3d;
+    font-family:Arial;
+    word-spacing:4px;
+}
+.totorial_question > h2:hover{
+    color:green !important;
+}
 .totorial_heading > a{
     color: green;
     text-decoration: underline;
     font-size: 15px;
+}
+
+.homePage{
+    margin-top: 20px;
+}
+.homePage > div > a > img{
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.homePage > div > a > img:hover{
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(45, 56, 40, 0.75);
+-moz-box-shadow:    2px 2px 5px 0px rgba(45, 56, 40, 0.75);
+box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
 }

@@ -2,6 +2,172 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
 
+import Comment from './comment.jsx';
+import Footer from './footer.jsx'
+
+class Header extends React.Component {
+
+    constructor(){
+        super();
+        this.state = {
+            activateKey : localStorage.getItem('activeLink') ? localStorage.getItem('activeLink') : 0,
+        }
+    }
+
+    componentDidMount() {
+        window.onscroll = function() {
+            if($(this).scrollTop() > 200) {
+                $('#myBtn').fadeIn(3000);
+            } else {
+                $('#myBtn').fadeOut(3000);
+            }
+        };
+
+        $('#myBtn').bind('click', function(e) {
+                e.preventDefault();
+                $('body,html').animate({scrollTop:0},200);
+            });
+    }
+
+    activeLink(eventKey, location){
+        if(eventKey == 1){
+            window.location.href = '#/';
+        }else if(eventKey == 2){
+            window.location.href = '#/nodejs/home';
+        }else if(eventKey == 3){
+            window.location.href = '#/nodejs/home';
+        }else if(eventKey == 4){
+            window.location.href = '#/nodejs/home';
+        }else if(eventKey == 5){
+            window.location.href = '#/nodejs/home';
+        }else{
+            window.location.href = "#/";
+        }
+        
+        //window.location.href = location;
+        this.setState({activateKey : eventKey})
+        localStorage.setItem('activeLink', eventKey)
+    }
+
+    isAcivated(activeKey){
+        console.log(this.state.activateKey)
+        if(activeKey == localStorage.getItem('activeLink')){
+            return 'activeLink';
+        }else{
+            return '';
+        }
+    }
+  render() {
+
+      
+    return (
+      <div>
+          <button id="myBtn" title="Go to top">Top</button>
+          <section>
+            <Navbar default collapseOnSelect style={{background : 'black', border:'none', 
+            borderTopRightRadius:'0px', borderTopLeftRadius:'0px', 
+            borderBottomRightRadius:'0px', borderBottomLeftRadius:'0px', boxShadow: 'none' 
+            }}>
+                <Navbar.Header>
+                <Navbar.Brand>
+                    <span>NODETPOINT</span>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                </Navbar.Header>
+                <Navbar.Collapse>
+                <Nav onSelect={this.activeLink.bind(this)}>
+                    <NavItem eventKey={1} value="ggg" href="#" className={`${this.isAcivated(1)}`}>
+                        <span>HOME</span>
+                    </NavItem>
+
+                    <NavItem eventKey={2} href="#" className={`${this.isAcivated(2)}`}>
+                        <span>NODEJS</span>
+                    </NavItem>
+
+                    <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
+                        <span>REACTJS</span>
+                    </NavItem>
+
+                    <NavItem eventKey={4} href="#" className={`${this.isAcivated(4)}`}>
+                        <span>ANGULARJS</span>
+                    </NavItem>
+
+                    <NavItem eventKey={5} className={`${this.isAcivated(5)}`}>
+                        <a>MONGODB</a>
+                    </NavItem>
+
+                    <NavDropdown eventKey={6} title="INTERVIEW QUESTINS" noCaret id="basic-nav-dropdown ">
+                        <MenuItem eventKey={6.1}>Javascript interview questions</MenuItem>
+                        <MenuItem eventKey={6.2}>Nodejs interview questions</MenuItem>
+                        <MenuItem eventKey={6.3}>AngularJs interview questions</MenuItem>
+                        <MenuItem eventKey={6.4}>ReactJs interview questions</MenuItem>
+                        <MenuItem eventKey={6.5}>MongoDb interview questions</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={6.6}>Others</MenuItem>
+                    </NavDropdown>
+                </Nav>
+                <Nav pullRight>
+                    <div className="col-md-3 pull-right headerSearch">
+                        <div className="form-group">
+                            <div className="input-group">
+                                <input type="text" className="form-control header-text-box" placeholder="Search" id="inputGroup"/>
+                                <span className="input-group-addon">
+                                    <i className="glyphicon glyphicon-search header-search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+            <div style={{ backgroundColor: "grey", marginTop:'-20px', padding:'10px'}}>
+                <center style={{fontSize: "75px", fontWeight: "bold", 
+                fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</center>
+                <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
+                fontWeight: "normal"}} >raise your khowledge</center>
+            </div>
+        </section>
+
+        <section className="row">
+            <div className="col-md-12">
+                <div className="col-md-9 homePage">  
+                    {this.props.children}
+                </div>
+                <div className="col-md-3" style={{marginTop:'20px'}}>
+                    <img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>
+                </div>
+            </div>
+            {/*Comments*/}
+            {this.state.activateKey == 1 ? '' : <Comment/>}
+        </section>
+        
+        {/*Footer*/}
+        <Footer/>
+      </div>
+    )
+  }
+}
+export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
+
 
 class Header extends React.Component {
 
@@ -215,7 +381,7 @@ class Header extends React.Component {
             <center style={{fontSize: "15px", color: "#fff"}}>Copyright © 2017-2017 nodetpoint.com. All rights reserved.</center>
         </div>
     </section>
-
+{this.props.children}
 
 
 
@@ -224,3 +390,6 @@ class Header extends React.Component {
   }
 }
 export default Header;
+
+
+*/
