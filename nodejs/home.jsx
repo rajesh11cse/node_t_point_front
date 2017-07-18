@@ -23,16 +23,16 @@ class NodeJSHome extends React.Component {
                         What is NodeJs and how is it useful for us.</p>
 
                         <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Environment Setup</a><br />
+                            <a target="_black" href="#/nodejs/environmentSetup">Node.js Environment Setup</a><br />
                         Install and setup an environment for on defferent platforms</p>
 
                          <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Hello World Example</a><br />
+                            <a  target="_black" href="#/nodejs/helloWorld">Node.js Hello World Example</a><br />
                        Classic Hello World with NodeJS.</p>
 
                        <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Console(REPL)</a><br />
-                       Classic methods like console.log(), console.error(), console.warn() and Read Eval Print and Loop.</p>
+                            <a target="_black" href="#/nodejs/repl">Node.js REPL</a><br />
+                       (REPL)Read Eval Print and Loop.</p>
 
                         <p className="totorial_heading">
                             <a style={{color:'green'}} href="">Node.js Module</a><br />

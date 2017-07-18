@@ -7,6 +7,9 @@ import NodeJSHome from './nodejs/home.jsx';
 
 
 import NodeJsIntroduction from './nodejs/introduction.jsx';
+import EnvironmentSetup from './nodejs/environmentSetup.jsx';
+import HelloWorld from './nodejs/helloWorld.jsx';
+import REPL from './nodejs/REPL.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -17,6 +20,9 @@ ReactDOM.render((
       <IndexRoute component={Home} />
       <Route path="/nodejs/home" component={NodeJSHome}/>
       <Route path="/nodejs/introduction" component={NodeJsIntroduction} />
+      <Route path="/nodejs/environmentSetup" component={EnvironmentSetup} />
+      <Route path="/nodejs/helloWorld" component={HelloWorld} />
+      <Route path="/nodejs/repl" component={REPL} />
     </Route>
   </Router>
 

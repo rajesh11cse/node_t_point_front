@@ -37,8 +37,9 @@ class NodeJsIntroduction extends React.Component {
                                 <li><strong>No Buffering</strong></li>
                                     <p>Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
                             </ul>
-                            <i><strong>Note :</strong>
-                            Many of us are confused about Node.js. It is not a web server like Apache. Node.js provides a new way to execute our code. It is JavaScript runtime. Node.js provides the facility to create an HTTP server and we can host our application on the same.
+                            <i><strong>Note : </strong>
+                            Here dont't confused that Node.js is a web server like Apache. Node.js provides us a way to execute
+                             the code. It is javascript runtime environment. Node.js gives us the facliity to create an HTTP server and host our application on the same. 
                         </i>
                         </p>
 
@@ -87,32 +88,7 @@ class NodeJsIntroduction extends React.Component {
                                 <li>Using JavaScript on a web server as well as the browser reduces the impedance mismatch between the two programming environments that can communicate data structures via JSON that work the same on both sides of the equation. Duplicate form validation code can be shared between server and client and so on.</li>
                             </ol>
                         </p>
-
-                         {/*<p className="totorial_question">
-                             <h2 style={{color:'#605e5e'}}>Features of Node.js</h2>
-                            <p>Following are some important features of Node.js.</p>
-                                    <li><i>Fast in Code execution</i></li>
-                                    <p>It is very fast in code execution. </p>
-
-                                    
-                                    <h3><i>Highly scalable</i></h3>
-                                    <p>Node.js uses a single thread model for event looping. Events respond to the server without blocking other operations. This makes Node.js highly scalable. Traditional servers create limited threads to handle requests and Node.js creates a single thread that provides service to much larger numbers of requests.</p>
-                                    
-
-                                    
-                                    <h3><i>Event Driven and Asynchronous</i></h3>
-                                    <p>All API of Node.js are asynchronous. It means that the server is moving the next API call without waiting for returning data of previous requests.</p>
-                                    
-
-                                    
-                                    <h3><i>No Buffering</i></h3>
-                                    <p>Node.js never buffers any data.</p>
-                                    
-                                    Many of us are confused about Node.js. It is not a web server like Apache. Node.js provides a new way to execute our code. It is JavaScript runtime. Node.js provides the facility to create an HTTP server and we can host our application on the same.
-                        
-                                    
-                        </p>*/}
-
+                        <button className="pull-right btn btn-default ">Next Page <span className="glyphicon glyphicon-circle-arrow-right"></span></button>
                     </div>
                 </article>
             </div>
