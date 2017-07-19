@@ -16,7 +16,7 @@ class Header extends React.Component {
 
     componentDidMount() {
         window.onscroll = function() {
-            if($(this).scrollTop() > 200) {
+            if($(this).scrollTop() > 300) {
                 $('#myBtn').fadeIn(3000);
             } else {
                 $('#myBtn').fadeOut(3000);
@@ -24,9 +24,9 @@ class Header extends React.Component {
         };
 
         $('#myBtn').bind('click', function(e) {
-                e.preventDefault();
-                $('body,html').animate({scrollTop:0},200);
-            });
+            e.preventDefault();
+            $('body,html').animate({scrollTop:0},200);
+        });
     }
 
     activeLink(eventKey, location){
@@ -50,7 +50,9 @@ class Header extends React.Component {
     }
 
     isAcivated(activeKey){
-        console.log(this.state.activateKey)
+
+        $('body,html').animate({scrollTop:0},100);
+
         if(activeKey == localStorage.getItem('activeLink')){
             return 'activeLink';
         }else{
@@ -85,6 +87,10 @@ class Header extends React.Component {
                     </NavItem>
 
                     <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
+                        <span>NODEJS INTERVIEW QUESTIONS</span>
+                    </NavItem>
+
+                   {/* <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
                         <span>REACTJS</span>
                     </NavItem>
 
@@ -104,15 +110,15 @@ class Header extends React.Component {
                         <MenuItem eventKey={6.5}>MongoDb interview questions</MenuItem>
                         <MenuItem divider />
                         <MenuItem eventKey={6.6}>Others</MenuItem>
-                    </NavDropdown>
+                    </NavDropdown>*/}
                 </Nav>
                 <Nav pullRight>
                     <div className="col-md-3 pull-right headerSearch">
                         <div className="form-group">
                             <div className="input-group">
                                 <input type="text" className="form-control header-text-box" placeholder="Search" id="inputGroup"/>
-                                <span className="input-group-addon">
-                                    <i className="glyphicon glyphicon-search header-search-icon"></i>
+                                <span className="input-group-addon header-search-icon">
+                                    <i className="glyphicon glyphicon-search "></i>
                                 </span>
                             </div>
                         </div>

@@ -35,11 +35,11 @@ class NodeJSHome extends React.Component {
                        (REPL)Read Eval Print and Loop.</p>
 
                         <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Module</a><br />
+                            <a target="_black" href="#/nodejs/module">Node.js Module</a><br />
                        Node.js includes three types of modules Core Modules, Local Modules and Third Party Modules</p>
 
                         <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js module.exports</a><br />
+                            <a target="_black" href="#/nodejs/moduleExport">Node.js module.exports</a><br />
                        How module.exports works in NodeJs</p>
 
                         <p className="totorial_heading">

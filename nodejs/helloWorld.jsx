@@ -5,6 +5,8 @@ class HelloWorld extends React.Component {
            <div>
                 <article>
                     <div className="col-md-12">
+                        <a href="#/nodejs/environmentSetup" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
+                        <a href="#/nodejs/repl" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
                             <h2 style={{color:'#605e5e'}}>Node.js Hello World Example</h2>
                             <p>
@@ -15,8 +17,7 @@ class HelloWorld extends React.Component {
                                 <li><strong>Console-Based</strong></li>
                                 <p>create a file in notepade and save it as node-example.js</p>
                                 <p><i style={{backgroundColor:'#e8e8e8'}}>node-example.js</i></p>
-                                <p style={{opacity:'0.9' ,color:'black', fontSize:'15px', borderLeft:'1px solid green', 
-                                padding:'10px'}}>console.log("<span style={{color:'red'}}>Hello World</span>");</p>
+                                <p className="text-code">console.log("<span style={{color:'red'}}>Hello World</span>");</p>
                                  <p>Now execute the code by the following command and see the result in command prompt.</p>
                                 <img width="80%" src="./img/result1.png" alt="Image Error"/>
                                 <p>Now execute the code by the following command and see the result in command prompt.</p>
@@ -30,7 +31,8 @@ class HelloWorld extends React.Component {
                             </ul>
                         </p>
 
-                        <button className="pull-right btn btn-default ">Next Page <span className="glyphicon glyphicon-circle-arrow-right"></span></button>
+                        <a href="#/nodejs/environmentSetup" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
+                        <a href="#/nodejs/repl" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                     </div>
                 </article>
             </div>

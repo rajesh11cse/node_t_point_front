@@ -82,10 +82,17 @@
     color:#3f3d3d;
     font-family:Arial;
     word-spacing:4px;
+    letter-spacing:1px;
+    line-height: 20px;
 }
+.totorial_question > h2{
+    color:#605e5e;
+}
+
 .totorial_question > h2:hover{
     color:green !important;
 }
+
 .totorial_heading > a{
     color: green;
     text-decoration: underline;
@@ -104,4 +111,34 @@
     -webkit-box-shadow: 2px 2px 5px 0px rgba(45, 56, 40, 0.75);
 -moz-box-shadow:    2px 2px 5px 0px rgba(45, 56, 40, 0.75);
 box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
+}
+
+
+
+
+
+.code-table > thead, tbody{
+    border: 1px solid grey;
+}
+
+.code-table > thead > tr, tbody > tr, td{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.text-code{
+    color:black;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 5px #888888;
+    font-size:15px;
+    font-weight:normal;
+    border:1px solid #ededed;
+    border-left:1px solid green;
+    padding-left:5px;
+}
+
+.next-pre-btn{
+    background: none; 
+    color:green;
+    border-radius: 15px;
 }

@@ -10,6 +10,8 @@ import NodeJsIntroduction from './nodejs/introduction.jsx';
 import EnvironmentSetup from './nodejs/environmentSetup.jsx';
 import HelloWorld from './nodejs/helloWorld.jsx';
 import REPL from './nodejs/REPL.jsx';
+import Module from './nodejs/module.jsx';
+import ModuleExport from './nodejs/moduleExport.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -18,11 +20,13 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Header}>
       <IndexRoute component={Home} />
-      <Route path="/nodejs/home" component={NodeJSHome}/>
+      <Route path="/nodejs/home" component={NodeJSHome} />
       <Route path="/nodejs/introduction" component={NodeJsIntroduction} />
       <Route path="/nodejs/environmentSetup" component={EnvironmentSetup} />
       <Route path="/nodejs/helloWorld" component={HelloWorld} />
       <Route path="/nodejs/repl" component={REPL} />
+      <Route path="/nodejs/module" component={Module} />
+      <Route path="/nodejs/moduleExport" component={ModuleExport} />
     </Route>
   </Router>
 
