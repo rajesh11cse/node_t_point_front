@@ -17,7 +17,9 @@ class HelloWorld extends React.Component {
                                 <li><strong>Console-Based</strong></li>
                                 <p>create a file in notepade and save it as node-example.js</p>
                                 <p><i style={{backgroundColor:'#e8e8e8'}}>node-example.js</i></p>
-                                <p className="text-code">console.log("<span style={{color:'red'}}>Hello World</span>");</p>
+                                <p className="text-code">
+                                    <p>console.log("<span style={{color:'red'}}>Hello World</span>");</p>
+                                </p>
                                  <p>Now execute the code by the following command and see the result in command prompt.</p>
                                 <img width="80%" src="./img/result1.png" alt="Image Error"/>
                                 <p>Now execute the code by the following command and see the result in command prompt.</p>

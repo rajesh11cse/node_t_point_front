@@ -44,7 +44,7 @@ class REPL extends React.Component {
                                 <p>
                                 REPL can be started by simply running node on shell/console without any arguments as follows.
                                 </p>
-                                <p className="text-code">$ node</p>
+                                <p className="text-code"><p>$ node</p></p>
                                 <p>You will see the REPL Command prompt <code>></code> where you can type any Node.js command </p>
 
                                 <p>

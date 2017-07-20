@@ -12,6 +12,8 @@ import HelloWorld from './nodejs/helloWorld.jsx';
 import REPL from './nodejs/REPL.jsx';
 import Module from './nodejs/module.jsx';
 import ModuleExport from './nodejs/moduleExport.jsx';
+import NPM from './nodejs/npm.jsx';
+import WebServer from './nodejs/webServer.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -27,6 +29,8 @@ ReactDOM.render((
       <Route path="/nodejs/repl" component={REPL} />
       <Route path="/nodejs/module" component={Module} />
       <Route path="/nodejs/moduleExport" component={ModuleExport} />
+      <Route path="/nodejs/npm" component={NPM} />
+      <Route path="/nodejs/WebServer" component={WebServer} />
     </Route>
   </Router>
 

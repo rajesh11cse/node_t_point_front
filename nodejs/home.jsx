@@ -43,11 +43,11 @@ class NodeJSHome extends React.Component {
                        How module.exports works in NodeJs</p>
 
                         <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node Package Manager (NPM)</a><br />
+                            <a target="_black" href="#/nodejs/npm">Node Package Manager (NPM)</a><br />
                        What is the NPM and What is the need of NPM in Node.js</p>
 
                        <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Web Server</a><br />
+                            <a target="_black" href="#/nodejs/webServer">Node.js Web Server</a><br />
                         What is Node.js web server and How to handle HTTP requests in NodeJs</p>
 
                          <p className="totorial_heading">

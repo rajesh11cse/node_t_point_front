@@ -127,14 +127,31 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
 }
 
 .text-code{
-    color:black;
+    /*color:black;
     letter-spacing: 1px;
     box-shadow: 2px 2px 5px #888888;
     font-size:15px;
     font-weight:normal;
     border:1px solid #ededed;
     border-left:1px solid green;
-    padding-left:5px;
+    padding-left:5px;*/
+
+    letter-spacing: 1px;
+    font-size:15px;
+    font-weight:normal;
+    font-style:italic;
+   
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    padding:10px;
+    padding-left:20px;
+    padding-bottom:0px;
+    background-color:#edefef;
+
+
+}
+.text-code:hover{
+     background-color:white;
 }
 
 .next-pre-btn{
