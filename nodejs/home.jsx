@@ -51,11 +51,11 @@ class NodeJSHome extends React.Component {
                         What is Node.js web server and How to handle HTTP requests in NodeJs</p>
 
                          <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Global Objects</a><br />
-                        What are Node.js global objects and Why we eeded of these variables.</p>
+                            <a target="_black" href="#/nodejs/globalObject">Node.js Global Objects</a><br />
+                        What are Node.js global objects, Uses of these variables.</p>
 
                            <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js Debugger</a><br />
+                            <a target="_black" href="#/nodejs/debugging">Node.js Debugging</a><br />
                         How to debug a nodejs application and tools to debug the application.</p>
 
                         <p className="totorial_heading">

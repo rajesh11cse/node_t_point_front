@@ -9,24 +9,24 @@ class Home extends React.Component {
             <div>
                 <div className="col-md-6">
                     <a href="#/nodejs/home" onClick={this.activeLink.bind(this, 2)}>
-                        <img className="col-md-12 thumbnail" src="./img/nodejs.jpg" alt=""/>
+                        <img width="100%" className="col-md-12 thumbnail" src="./img/nodejs.jpg" alt=""/>
                     </a>
                 </div>
                 <div className="col-md-6">
                     <a href="#/nodejs/home">
-                    <img className="col-md-12 thumbnail" src="./img/reactjs.jpg" alt=""/>
+                    <img width="100%"  className="col-md-12 thumbnail" src="./img/reactjs.jpg" alt=""/>
                         </a>
                 </div>
 
                 <div className="col-md-6">
                     <a href="#/nodejs/home">
-                    <img className="col-md-12 thumbnail" src="./img/mongodb.jpg" alt=""/>
+                    <img width="100%"  className="col-md-12 thumbnail" src="./img/mongodb.jpg" alt=""/>
                         </a>
                 </div>
 
                 <div className="col-md-6">
                     <a href="#/nodejs/home">
-                    <img className="col-md-12 thumbnail" src="./img/angularjs.jpg" alt=""/>
+                    <img width="100%"  className="col-md-12 thumbnail" src="./img/angularjs.jpg" alt=""/>
                         </a>
                 </div>
             </div>

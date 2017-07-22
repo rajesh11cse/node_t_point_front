@@ -6,13 +6,13 @@ class NPM extends React.Component {
                 <article>
                     <div className="col-md-12">
                         <a href="#/nodejs/npm" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        {/*<a href="#/nodejs/webserver" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>*/}
+                        <a href="#/nodejs/globalObject" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
                             <h2 style={{color:'#605e5e'}}>Node.js Web Server</h2>
                             <p>
                                We learned console-baseb application with an exmaple in previous section, In this section, 
                                we will learn to create a Node.js web server and handle HTTP requests.
-                               This is the same as web-based application. Here, we will able to see the the output on brower as well. 
+                               This is the same as web-based application. Here, we will be able to see the the output on brower as well. 
                             </p>
                             <p>
                                 A Web Server is a software application which handles HTTP requests sent by the HTTP client, 
@@ -100,7 +100,7 @@ class NPM extends React.Component {
                         </p>
 
                         <a href="#/nodejs/npm" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        {/*<a href="#/nodejs/webserver" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>*/}
+                       <a href="#/nodejs/globalObject" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                     </div>
                 </article>
             </div>

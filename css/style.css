@@ -84,9 +84,11 @@
     word-spacing:4px;
     letter-spacing:1px;
     line-height: 20px;
+    border-bottom:1px solid #e2e2e2;
 }
 .totorial_question > h2{
     color:#605e5e;
+    font-weight: bold;
 }
 
 .totorial_question > h2:hover{
@@ -158,4 +160,40 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
     background: none; 
     color:green;
     border-radius: 15px;
+}
+
+
+.terminal > .terminal-header{
+    color: white;
+    background-color:#514F48;
+    font-weight: bold;
+    font-size:14px;
+    letter-spacing: 1px;
+    padding: 5px;
+    border: 15px solid 494741;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.terminal > .terminal-body{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:#300A24;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size:14px;
+    padding: 5px;
+    padding-bottom: 100px;
+    border: 10px solid 494741;
+    border-radius: 0px 0px 5px 5px;
+    line-height: 10px;
+}
+
+
+
+.terminal > .terminal-body > p > .user-name{
+    color: #57af41;
+}
+.terminal > .terminal-body > p > .path{
+    color: #6C9CCF;
 }

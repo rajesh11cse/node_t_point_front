@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap'
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
 import Comment from './comment.jsx';
 import Footer from './footer.jsx'
@@ -34,17 +34,10 @@ class Header extends React.Component {
             window.location.href = '#/';
         }else if(eventKey == 2){
             window.location.href = '#/nodejs/home';
-        }else if(eventKey == 3){
-            window.location.href = '#/nodejs/home';
-        }else if(eventKey == 4){
-            window.location.href = '#/nodejs/home';
-        }else if(eventKey == 5){
-            window.location.href = '#/nodejs/home';
         }else{
             window.location.href = "#/";
         }
-        
-        //window.location.href = location;
+
         this.setState({activateKey : eventKey})
         localStorage.setItem('activeLink', eventKey)
     }
@@ -89,31 +82,10 @@ class Header extends React.Component {
                     <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
                         <span>NODEJS INTERVIEW QUESTIONS</span>
                     </NavItem>
-
-                   {/* <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
-                        <span>REACTJS</span>
-                    </NavItem>
-
-                    <NavItem eventKey={4} href="#" className={`${this.isAcivated(4)}`}>
-                        <span>ANGULARJS</span>
-                    </NavItem>
-
-                    <NavItem eventKey={5} className={`${this.isAcivated(5)}`}>
-                        <a>MONGODB</a>
-                    </NavItem>
-
-                    <NavDropdown eventKey={6} title="INTERVIEW QUESTINS" noCaret id="basic-nav-dropdown ">
-                        <MenuItem eventKey={6.1}>Javascript interview questions</MenuItem>
-                        <MenuItem eventKey={6.2}>Nodejs interview questions</MenuItem>
-                        <MenuItem eventKey={6.3}>AngularJs interview questions</MenuItem>
-                        <MenuItem eventKey={6.4}>ReactJs interview questions</MenuItem>
-                        <MenuItem eventKey={6.5}>MongoDb interview questions</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey={6.6}>Others</MenuItem>
-                    </NavDropdown>*/}
                 </Nav>
                 <Nav pullRight>
-                    <div className="col-md-3 pull-right headerSearch">
+                    Search
+                   {/* <div className="col-md-3 pull-right headerSearch">
                         <div className="form-group">
                             <div className="input-group">
                                 <input type="text" className="form-control header-text-box" placeholder="Search" id="inputGroup"/>
@@ -122,7 +94,7 @@ class Header extends React.Component {
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div>*/}
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>

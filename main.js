@@ -14,6 +14,8 @@ import Module from './nodejs/module.jsx';
 import ModuleExport from './nodejs/moduleExport.jsx';
 import NPM from './nodejs/npm.jsx';
 import WebServer from './nodejs/webServer.jsx';
+import GlobalObject from './nodejs/globalObject.jsx';
+import Debugging from './nodejs/debugging.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -31,6 +33,8 @@ ReactDOM.render((
       <Route path="/nodejs/moduleExport" component={ModuleExport} />
       <Route path="/nodejs/npm" component={NPM} />
       <Route path="/nodejs/WebServer" component={WebServer} />
+      <Route path="/nodejs/globalObject" component={GlobalObject} />
+      <Route path="/nodejs/debugging" component={Debugging} />
     </Route>
   </Router>
 

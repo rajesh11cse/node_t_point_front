@@ -4,9 +4,9 @@ class Module extends React.Component {
         return (
             <div>
                 <article>
-                    <a href="#/nodejs/repl" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                    <a href="#/nodejs/moduleExport" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                     <div className="col-md-12">
+                        <a href="#/nodejs/repl" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
+                        <a href="#/nodejs/moduleExport" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
                             <h2 style={{ color: '#605e5e' }}>Node.js Module</h2>
                             <p>Module in Node.js is a simple or complex functionality which encapsulates encapsulates related code into a single unit of code
@@ -53,23 +53,23 @@ class Module extends React.Component {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><a trarget="_black" href="https://nodejs.org/api/http.html">http</a></td>
+                                        <td><a target="_black" href="https://nodejs.org/api/http.html">http</a></td>
                                         <td>http module includes classes, methods and events to create Node.js http server.</td>
                                     </tr>
                                     <tr>
-                                        <td><a trarget="_black" href="https://nodejs.org/api/url.html">url</a></td>
+                                        <td><a target="_black" href="https://nodejs.org/api/url.html">url</a></td>
                                         <td>url module includes methods for URL resolution and parsing.</td>
                                     </tr>
                                     <tr>
-                                        <td><a trarget="_black" href="https://nodejs.org/api/querystring.html">querystring</a></td>
+                                        <td><a target="_black" href="https://nodejs.org/api/querystring.html">querystring</a></td>
                                         <td>querystring module includes methods to deal with query string.</td>
                                     </tr>
                                     <tr>
-                                        <td><a trarget="_black" href="https://nodejs.org/api/path.html">path</a></td>
+                                        <td><a target="_black" href="https://nodejs.org/api/path.html">path</a></td>
                                         <td>path module includes methods to deal with file paths.</td>
                                     </tr>
                                     <tr>
-                                        <td><a trarget="_black" href="https://nodejs.org/api/fs.html">fs</a></td>
+                                        <td><a target="_black" href="https://nodejs.org/api/fs.html">fs</a></td>
                                         <td>fs module includes classes, methods, and events to work with file I/O.</td>
                                     </tr>
                                 </tbody>
