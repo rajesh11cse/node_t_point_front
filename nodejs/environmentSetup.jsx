@@ -8,7 +8,7 @@ class EnvironmentSetup extends React.Component {
                         <a href="#/nodejs/introduction" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
                         <a href="#/nodejs/helloWorld" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>Node.js Installation and Setup Environment</h2>
+                            <h2>Node.js Installation and Setup Environment</h2>
                             <p>
                                 Node.js installation and setup environment can be setup in Windows, Mac, Linux and Solaris. The following tools/SDK are
                                 required for developing a Node.js application on any platform.

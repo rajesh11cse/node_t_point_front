@@ -4,7 +4,7 @@ class Debugging extends React.Component {
         return (
             <div>
                 <article>
-                    <div className="terminal" >
+                    {/*<div className="terminal" >
                         <div className="terminal-header">
                         rajeshkumar@T38B:~/nodetpoint
                         </div>
@@ -18,13 +18,13 @@ class Debugging extends React.Component {
 </p>
 <p>Debugger listening on 127.0.0.1:5858</p>
                         </div>
-                    </div>
+                    </div>*/}
                     
                     <div className="col-md-12">
                         <a href="#/nodejs/globalObject" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        {/* <a href="#/nodejs/globalObject" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>*/}
+                         <a href="#/nodejs/eventEmitters" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>Node.js Debugging</h2>
+                            <h2>Node.js Debugging</h2>
                             <p>
                                 Debugging, in computer programming is a multistep process that involves identifying a problem, isolating the source of the problem,
                              and then either correcting the problem or determining a way to work around it called Debugging. Check the description for
@@ -75,7 +75,7 @@ class Debugging extends React.Component {
                         </p>
 
                         <a href="#/nodejs/globalObject" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        {/*<a href="#/nodejs/globalObject" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>*/}
+                        <a href="#/nodejs/eventEmitters" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                     </div>
                 </article>
             </div>

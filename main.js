@@ -16,6 +16,7 @@ import NPM from './nodejs/npm.jsx';
 import WebServer from './nodejs/webServer.jsx';
 import GlobalObject from './nodejs/globalObject.jsx';
 import Debugging from './nodejs/debugging.jsx';
+import EventEmitters from './nodejs/eventEmitters.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -35,6 +36,7 @@ ReactDOM.render((
       <Route path="/nodejs/WebServer" component={WebServer} />
       <Route path="/nodejs/globalObject" component={GlobalObject} />
       <Route path="/nodejs/debugging" component={Debugging} />
+      <Route path="/nodejs/eventEmitters" component={EventEmitters} />
     </Route>
   </Router>
 
