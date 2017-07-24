@@ -59,13 +59,21 @@ class Header extends React.Component {
       <div>
           <button id="myBtn" title="Go to top">Top</button>
           <section>
+               <div style={{ fontFamily:'Allan',
+                   backgroundColor: "white", marginTop:'0px', padding:'10px'}}>
+                {/*<p style={{fontSize: "75px", fontWeight: "bold", 
+                fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</p>
+                <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
+                fontWeight: "normal"}} >raise your khowledge</center>*/}
+                <img className="" width="25%" src="./img/logo.png" alt="Image Error" />
+            </div>
             <Navbar default collapseOnSelect style={{background : 'black', border:'none', 
             borderTopRightRadius:'0px', borderTopLeftRadius:'0px', 
             borderBottomRightRadius:'0px', borderBottomLeftRadius:'0px', boxShadow: 'none' 
             }}>
                 <Navbar.Header>
                 <Navbar.Brand>
-                    <span>NODETPOINT</span>
+                    <span style={{ color: "white"}}>NODETPOINT</span>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 </Navbar.Header>
@@ -98,12 +106,7 @@ class Header extends React.Component {
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <div style={{ backgroundColor: "grey", marginTop:'-20px', padding:'10px'}}>
-                <center style={{fontSize: "75px", fontWeight: "bold", 
-                fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</center>
-                <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
-                fontWeight: "normal"}} >raise your khowledge</center>
-            </div>
+           
         </section>
 
         <section className="row">
