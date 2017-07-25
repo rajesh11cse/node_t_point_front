@@ -34,6 +34,8 @@ class Header extends React.Component {
             window.location.href = '#/';
         }else if(eventKey == 2){
             window.location.href = '#/nodejs/home';
+        }else if(eventKey == 4){
+            window.location.href = '#/contactUs';
         }else{
             window.location.href = "#/";
         }
@@ -59,13 +61,19 @@ class Header extends React.Component {
       <div>
           <button id="myBtn" title="Go to top">Top</button>
           <section>
-               <div style={{ fontFamily:'Allan',
-                   backgroundColor: "white", marginTop:'0px', padding:'10px'}}>
+               <div style={{backgroundColor: "white", marginTop:'0px', padding:'10px'}}>
                 {/*<p style={{fontSize: "75px", fontWeight: "bold", 
                 fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</p>
                 <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
                 fontWeight: "normal"}} >raise your khowledge</center>*/}
                 <img className="" width="25%" src="./img/logo.png" alt="Image Error" />
+                <div className="pull-right" style={{fontSize:'20px',filter: 'grayscale(10%)'}}>  
+                    <span>Follow us </span>
+                    <a href=""><img className="" src="./img/facebook.png" alt="Image Error" /></a>
+                    <a href=""><img className="" src="./img/twitter.png" alt="Image Error" /></a>
+                    <a href=""><img className="" src="./img/linkedin.png" alt="Image Error" /></a>
+                    <a href=""><img className="" src="./img/google.png" alt="Image Error" /></a>
+                </div>
             </div>
             <Navbar default collapseOnSelect style={{background : 'black', border:'none', 
             borderTopRightRadius:'0px', borderTopLeftRadius:'0px', 
@@ -80,19 +88,21 @@ class Header extends React.Component {
                 <Navbar.Collapse>
                 <Nav onSelect={this.activeLink.bind(this)}>
                     <NavItem eventKey={1} value="ggg" href="#" className={`${this.isAcivated(1)}`}>
-                        <span>HOME</span>
+                        <span>Home</span>
                     </NavItem>
 
                     <NavItem eventKey={2} href="#" className={`${this.isAcivated(2)}`}>
-                        <span>NODEJS</span>
+                        <span>NodeJs</span>
                     </NavItem>
 
                     <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
-                        <span>NODEJS INTERVIEW QUESTIONS</span>
+                        <span>NodeJs Interview Questions</span>
                     </NavItem>
                 </Nav>
-                <Nav pullRight>
-                    Search
+                <Nav pullRight  onSelect={this.activeLink.bind(this)}>
+                    <NavItem eventKey={4} href="#" className={`${this.isAcivated(4)}`}>
+                        <span>Contact Us</span>
+                    </NavItem>
                    {/* <div className="col-md-3 pull-right headerSearch">
                         <div className="form-group">
                             <div className="input-group">
@@ -120,7 +130,7 @@ class Header extends React.Component {
                 </div>
             </div>
             {/*Comments*/}
-            {this.state.activateKey == 1 ? '' : <Comment/>}
+            {this.state.activateKey == 1 || this.state.activateKey == 4 ? '' : <Comment/>}
         </section>
         
         {/*Footer*/}

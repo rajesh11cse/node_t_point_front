@@ -66,7 +66,7 @@
     padding:5px;
     color:grey;
     font-family:Arial;
-    word-spacing:5px;
+    word-spacing:5px;margin
     background-color: #f4f4f4;
     border: 1px solid #eae8e8;
 }
@@ -149,6 +149,17 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
     border-radius: 15px;
 }
 
+
+
+.map {
+  height: 300px;
+}
+
+@media screen and (min-width: 1024px){
+    .map {
+        height: 500px;
+    }
+}
 
 /*.terminal > .terminal-header{
     color: white;

@@ -4,6 +4,7 @@ import Header from './header.jsx';
 import App from './App.jsx';
 import Home from './home.jsx';
 import NodeJSHome from './nodejs/home.jsx';
+import ContactUs from './contactUs.jsx';
 
 
 import NodeJsIntroduction from './nodejs/introduction.jsx';
@@ -25,6 +26,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Header}>
       <IndexRoute component={Home} />
+      <Route path="/contactUs" component={ContactUs} />
       <Route path="/nodejs/home" component={NodeJSHome} />
       <Route path="/nodejs/introduction" component={NodeJsIntroduction} />
       <Route path="/nodejs/environmentSetup" component={EnvironmentSetup} />

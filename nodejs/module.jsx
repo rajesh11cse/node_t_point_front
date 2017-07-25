@@ -9,7 +9,7 @@ class Module extends React.Component {
                         <a href="#/nodejs/moduleExport" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
                             <h2 style={{ color: '#605e5e' }}>Node.js Module</h2>
-                            <p>Module in Node.js is a simple or complex functionality which encapsulates encapsulates related code into a single unit of code
+                            <p>Module in Node.js is a simple or complex functionality which encapsulates related code into a single unit of code
                                  or multiple JavaScript files which can be reused throughout the Node.js application.</p>
 
                             <p>Node modules run in their own scope so that they do not conflict with other modules or pollute
