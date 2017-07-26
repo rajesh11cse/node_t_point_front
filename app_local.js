@@ -2,7 +2,14 @@
 
 var express = require("express");
 var config = require('./config/database_local.js');
+var bodyParser = require('body-parser');
 var app = express();
+
+
+// =========== middleware ======================Questionnaire
+// Initial the the passport 
+app.use(bodyParser.json());
+
 
 // routes =========================================================
 var routes = require("./route/routes.js")(app);
