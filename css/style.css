@@ -1,5 +1,6 @@
 .navbar-default .navbar-nav>li>a {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: normal;
     color: #fff;
     letter-spacing: 2px;
 }
@@ -10,8 +11,9 @@
     color: white;
 } 
 
-.navbar-default .navbar-nav > li >a:active { 
+.navbar-default .navbar-nav > li >a:focus { 
     color: white;
+    display: block;
     background-color : #808080;
 }
 
@@ -66,7 +68,7 @@
     padding:5px;
     color:grey;
     font-family:Arial;
-    word-spacing:5px;margin
+    word-spacing:5px;
     background-color: #f4f4f4;
     border: 1px solid #eae8e8;
 }
@@ -161,6 +163,50 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
     }
 }
 
+.interview_question > span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.interview_question > p{
+    margin: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.our_topics > h3, .contact_us > h3{
+    color:whitesmoke;
+    font-size:20px;
+}
+.contact_us > p{
+   color:whitesmoke;
+}
+.contact_us > p > span{
+   color:#444342;
+   font-size: 12px;
+}
+
+.our_topics > ul{
+    list-style-type: none;
+}
+
+.our_topics > ul li:before {
+    margin-left: -38px;
+    content: "\00BB \0020";
+}
+.our_topics > ul > li > a{
+    list-style-type: none;
+    color:whitesmoke;
+}
+
+.hr_line{
+     display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 /*.terminal > .terminal-header{
     color: white;
     background-color:#514F48;

@@ -14,6 +14,9 @@ module.exports = {
     // From address to set password 
     defaultFromAddress: 'Node T Point nrbdrm@gmail.com',
 
+    // to 
+    to : 'rajeshkumar11cse@gmail.com',
+
     // Subject of mail
     subject: 'Message from nodetpoint user',
 

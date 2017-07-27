@@ -1,109 +1,120 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 import Comment from './comment.jsx';
 import Footer from './footer.jsx'
 
 class Header extends React.Component {
 
-    constructor(){
+    constructor() {
         super();
         this.state = {
-            activateKey : localStorage.getItem('activeLink') ? localStorage.getItem('activeLink') : 0,
+            activateKey: localStorage.getItem('activeLink') ? localStorage.getItem('activeLink') : 0,
         }
     }
 
     componentDidMount() {
-        window.onscroll = function() {
-            if($(this).scrollTop() > 300) {
+        window.onscroll = function () {
+            if ($(this).scrollTop() > 300) {
                 $('#myBtn').fadeIn(3000);
             } else {
                 $('#myBtn').fadeOut(3000);
             }
         };
 
-        $('#myBtn').bind('click', function(e) {
+        $('#myBtn').bind('click', function (e) {
             e.preventDefault();
-            $('body,html').animate({scrollTop:0},200);
+            $('body,html').animate({ scrollTop: 0 }, 200);
         });
     }
 
-    activeLink(eventKey, location){
-        if(eventKey == 1){
+    activeLink(eventKey, location) {
+        if (eventKey == 1) {
             window.location.href = '#/';
-        }else if(eventKey == 2){
+        } else if (eventKey == 2) {
             window.location.href = '#/nodejs/home';
-        }else if(eventKey == 4){
+        } else if (eventKey == 3) {
+            window.open('https://javacodepoint.com');
+        } else if (eventKey == 4) {
+            window.location.href = '#/interview/nodeInterview';
+        } else if (eventKey == 5) {
             window.location.href = '#/contactUs';
-        }else{
+        } else {
             window.location.href = "#/";
         }
 
-        this.setState({activateKey : eventKey})
-        localStorage.setItem('activeLink', eventKey)
+        if (eventKey !== 3) {
+            this.setState({ activateKey: eventKey })
+            localStorage.setItem('activeLink', eventKey)
+        }
+
     }
 
-    isAcivated(activeKey){
+    isAcivated(activeKey) {
 
-        $('body,html').animate({scrollTop:0},100);
+        $('body,html').animate({ scrollTop: 0 }, 100);
 
-        if(activeKey == localStorage.getItem('activeLink')){
+        if (activeKey == localStorage.getItem('activeLink')) {
             return 'activeLink';
-        }else{
+        } else {
             return '';
         }
     }
-  render() {
+    render() {
 
-      
-    return (
-      <div>
-          <button id="myBtn" title="Go to top">Top</button>
-          <section>
-               <div style={{backgroundColor: "white", marginTop:'0px', padding:'10px'}}>
-                {/*<p style={{fontSize: "75px", fontWeight: "bold", 
+
+        return (
+            <div>
+                <button id="myBtn" title="Go to top">Top</button>
+                <section>
+                    <div style={{ backgroundColor: "white", marginTop: '0px', padding: '10px' }}>
+                        {/*<p style={{fontSize: "75px", fontWeight: "bold", 
                 fontFamily: "Arial", color: "#fff", textShadow: '1px 1px #b2b0b0'}}>NodeTPoint</p>
                 <center style={{color:'#3d3f3f', fontSize: "15px", fontStyle:'italic', textShadow: 'none', marginTop:'-15px', 
                 fontWeight: "normal"}} >raise your khowledge</center>*/}
-                <img className="" width="25%" src="./img/logo.png" alt="Image Error" />
-                <div className="pull-right" style={{fontSize:'20px',filter: 'grayscale(10%)'}}>  
-                    <span>Follow us </span>
-                    <a href=""><img className="" src="./img/facebook.png" alt="Image Error" /></a>
-                    <a href=""><img className="" src="./img/twitter.png" alt="Image Error" /></a>
-                    <a href=""><img className="" src="./img/linkedin.png" alt="Image Error" /></a>
-                    <a href=""><img className="" src="./img/google.png" alt="Image Error" /></a>
-                </div>
-            </div>
-            <Navbar default collapseOnSelect style={{background : 'black', border:'none', 
-            borderTopRightRadius:'0px', borderTopLeftRadius:'0px', 
-            borderBottomRightRadius:'0px', borderBottomLeftRadius:'0px', boxShadow: 'none' 
-            }}>
-                <Navbar.Header>
-                <Navbar.Brand>
-                    <span style={{ color: "white"}}>NODETPOINT</span>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                <Nav onSelect={this.activeLink.bind(this)}>
-                    <NavItem eventKey={1} value="ggg" href="#" className={`${this.isAcivated(1)}`}>
-                        <span>Home</span>
-                    </NavItem>
+                        <img className="" width="25%" src="./img/logo.png" alt="Image Error" />
+                        <div className="pull-right" style={{ fontSize: '20px', filter: 'grayscale(10%)' }}>
+                            <span>Follow us </span>
+                            <a href=""><img className="" src="./img/facebook.png" alt="Image Error" /></a>
+                            <a href=""><img className="" src="./img/twitter.png" alt="Image Error" /></a>
+                            <a href=""><img className="" src="./img/linkedin.png" alt="Image Error" /></a>
+                            <a href=""><img className="" src="./img/google.png" alt="Image Error" /></a>
+                        </div>
+                    </div>
+                    <Navbar default collapseOnSelect style={{
+                        background: '#000', border: 'none',
+                        borderTopRightRadius: '0px', borderTopLeftRadius: '0px',
+                        borderBottomRightRadius: '0px', borderBottomLeftRadius: '0px', boxShadow: 'none'
+                    }}>
+                        <Navbar.Header>
+                            <Navbar.Brand>
+                                <span style={{ color: "white" }}>NODETPOINT</span>
+                            </Navbar.Brand>
+                            <Navbar.Toggle />
+                        </Navbar.Header>
+                        <Navbar.Collapse>
+                            <Nav onSelect={this.activeLink.bind(this)}>
+                                <NavItem eventKey={1} value="ggg" href="#" className={`${this.isAcivated(1)}`}>
+                                    <span>Home</span>
+                                </NavItem>
 
-                    <NavItem eventKey={2} href="#" className={`${this.isAcivated(2)}`}>
-                        <span>NodeJs</span>
-                    </NavItem>
+                                <NavItem eventKey={2} href="#" className={`${this.isAcivated(2)}`}>
+                                    <span>NodeJs</span>
+                                </NavItem>
+                                <NavItem eventKey={3} target="_blank" href="#" className={`${this.isAcivated(3)}`}>
+                                    <span>Java</span>
+                                </NavItem>
 
-                    <NavItem eventKey={3} href="#" className={`${this.isAcivated(3)}`}>
-                        <span>NodeJs Interview Questions</span>
-                    </NavItem>
-                </Nav>
-                <Nav pullRight  onSelect={this.activeLink.bind(this)}>
-                    <NavItem eventKey={4} href="#" className={`${this.isAcivated(4)}`}>
-                        <span>Contact Us</span>
-                    </NavItem>
-                   {/* <div className="col-md-3 pull-right headerSearch">
+                                <NavItem eventKey={4} href="#" className={`${this.isAcivated(4)}`}>
+                                    <span>NodeJs Interview</span>
+                                </NavItem>
+                            </Nav>
+                            <Nav pullRight onSelect={this.activeLink.bind(this)}>
+                                <NavItem eventKey={5} href="#" className={`${this.isAcivated(5)}`}>
+                                    <span>Contact Us</span>
+                                </NavItem>
+                                {/* <div className="col-md-3 pull-right headerSearch">
                         <div className="form-group">
                             <div className="input-group">
                                 <input type="text" className="form-control header-text-box" placeholder="Search" id="inputGroup"/>
@@ -113,31 +124,31 @@ class Header extends React.Component {
                             </div>
                         </div>
                     </div>*/}
-                </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-           
-        </section>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
 
-        <section className="row">
-            <div className="col-md-12">
-                <div className="col-md-10 homePage">  
-                    {this.props.children}
-                </div>
-                <div className="col-md-2" style={{marginTop:'20px'}}>
-                    {/*Ads here..*/}
-                    {/*<img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>*/}
-                </div>
+                </section>
+
+                <section className="row">
+                    <div className="col-md-12">
+                        <div className="col-md-10 homePage">
+                            {this.props.children}
+                        </div>
+                        <div className="col-md-2" style={{ marginTop: '20px' }}>
+                            {/*Ads here..*/}
+                            {/*<img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>*/}
+                        </div>
+                    </div>
+                    {/*Comments*/}
+                    {this.state.activateKey == 1 || this.state.activateKey == 4 ? '' : <Comment />}
+                </section>
+
+                {/*Footer*/}
+                <Footer />
             </div>
-            {/*Comments*/}
-            {this.state.activateKey == 1 || this.state.activateKey == 4 ? '' : <Comment/>}
-        </section>
-        
-        {/*Footer*/}
-        <Footer/>
-      </div>
-    )
-  }
+        )
+    }
 }
 export default Header;
 

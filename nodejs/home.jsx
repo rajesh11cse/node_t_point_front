@@ -59,7 +59,7 @@ class NodeJSHome extends React.Component {
                         How to debug a nodejs application and tools to debug the application.</p>
 
                         <p className="totorial_heading">
-                            <a style={{color:'green'}} href="">Node.js EventEmitter</a><br />
+                            <a target="_black" href="#/nodejs/eventEmitters">Node.js EventEmitter</a><br />
                         EventEmitter Object in NodeJS.</p>
 
                         <p className="totorial_heading">

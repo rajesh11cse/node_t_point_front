@@ -34,11 +34,11 @@ var appRouter = function (app) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: configAuth.defaultFromAddress, // sender address
-        to: req.body.email,// list of receivers user.email 'nrbdrm@gmail.com'
+        to: configAuth.to,// list of receivers user.email 'nrbdrm@gmail.com'
         subject: configAuth.subject, // Subject line
         html:
         "<p>"+"<strong>Name : </strong>"+"<span>"+req.body.name+"</span>"+"</p>"+
-        "<p>"+"<strong>Enail : </strong>"+"<span>"+req.body.email+"</span>"+"</p>"+
+        "<p>"+"<strong>Email : </strong>"+"<span>"+req.body.email+"</span>"+"</p>"+
         "<p>"+"<strong>Phone : </strong>"+"<span>"+req.body.phone+"</span>"+"</p>"+
         "<p>"+"<strong>Message : </strong>"+"<span>"+req.body.message+"</span>"+"</p>"+
         "<p>Thanks</p>"
