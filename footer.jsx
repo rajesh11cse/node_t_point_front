@@ -5,7 +5,7 @@ class Footer extends React.Component {
             <div>
                 <section>
 
-                    <div style={{ backgroundColor: "grey", padding: '40px' }}>
+                    <div style={{ backgroundColor: "#333333", padding: '40px' }}>
                         <div className="row">
                             <div className="col-md-4 our_topics">
                                 <h3>Our Topics</h3>

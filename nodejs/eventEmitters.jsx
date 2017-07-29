@@ -8,14 +8,14 @@ class Debugging extends React.Component {
                         <a href="#/nodejs/debugging" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
                          {/*<a href="#/nodejs/eventEmitters" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>*/}
                         <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>Node.js EventEmitter</h2>
+                            <h2>Node.js EventEmitter</h2>
                             <p>
                                 Node.js allows us to create and handle custom events easily by using <a href="https://nodejs.org/api/events.html">events</a> module. 
                                 Event module includes EventEmitter class which can be used to raise and handle custom events.
                             </p>
                         </p>
                         <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>What is EventEmitter Class?</h2>
+                            <h2>What is EventEmitter Class?</h2>
                             <p>
                                 EventEmitter class is a class which is present in the “events” module of Node.js. It can be accessed in 
                                 the following way.
@@ -44,7 +44,7 @@ class Debugging extends React.Component {
                         </p>
 
                          <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>What is Event Driven in node.js?</h2>
+                            <h2>What is Event Driven in node.js?</h2>
                             <p>
                                 It means as soon as Node starts its server, it simply initiates its variables, declares functions and then simply waits 
                                 for event to occur. It is the one of the reason why Node.js is pretty fast compared to other similar technologies.
@@ -56,7 +56,7 @@ class Debugging extends React.Component {
                             <img className="thumbnail" width="100%" src="./img/event_emitter.svg" alt="Image Error" />
                         </p>
                          <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>Example</h2>
+                            <h2>Example</h2>
                             <p>
                                Lets’ understand the ‘events.EventEmitter’ class methods and 
                                events in the best way with the help of the following demo example.
@@ -103,7 +103,7 @@ class Debugging extends React.Component {
                             </p>
                         </p>
                         <p className="totorial_question">
-                            <h2 style={{ color: '#605e5e' }}>Methods</h2>
+                            <h2>Methods</h2>
                             <p>
                                 The following table lists all the methods of EventEmitter class.
                             </p>

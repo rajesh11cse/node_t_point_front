@@ -59,8 +59,12 @@ class NodeJSHome extends React.Component {
                         How to debug a nodejs application and tools to debug the application.</p>
 
                         <p className="totorial_heading">
+                            <a target="_black" href="#/nodejs/eventLoop">Node.js Event Loop Architecture</a><br />
+                        Node.js Event Loop Architecture description, How event loop works</p>
+
+                         <p className="totorial_heading">
                             <a target="_black" href="#/nodejs/eventEmitters">Node.js EventEmitter</a><br />
-                        EventEmitter Object in NodeJS.</p>
+                        EventEmitter Objects in NodeJS.</p>
 
                         <p className="totorial_heading">
                             <a style={{color:'green'}} href="">MongoDB in Node.js</a><br />

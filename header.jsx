@@ -132,7 +132,7 @@ class Header extends React.Component {
 
                 <section className="row">
                     <div className="col-md-12">
-                        <div className="col-md-10 homePage">
+                        <div className="col-md-12 homePage">
                             {this.props.children}
                         </div>
                         <div className="col-md-2" style={{ marginTop: '20px' }}>

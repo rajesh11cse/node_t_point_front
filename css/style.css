@@ -1,5 +1,5 @@
 .navbar-default .navbar-nav>li>a {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     color: #fff;
     letter-spacing: 2px;
@@ -14,11 +14,11 @@
 .navbar-default .navbar-nav > li >a:focus { 
     color: white;
     display: block;
-    background-color : #808080;
+    background-color : #333333;
 }
 
 .activeLink{
-     background-color:grey;
+     background-color:#333333;
      color: black
 }
 
@@ -179,10 +179,10 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
     font-size:20px;
 }
 .contact_us > p{
-   color:whitesmoke;
+   color:#83D0F2;
 }
 .contact_us > p > span{
-   color:#444342;
+   color:#83D0F2;
    font-size: 12px;
 }
 
@@ -193,14 +193,15 @@ box-shadow:         2px 2px 5px 0px rgba(45, 56, 40, 0.75);
 .our_topics > ul li:before {
     margin-left: -38px;
     content: "\00BB \0020";
+     color:#83D0F2;
 }
 .our_topics > ul > li > a{
     list-style-type: none;
-    color:whitesmoke;
+    color:#83D0F2;
 }
 
 .hr_line{
-     display: block;
+    display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
