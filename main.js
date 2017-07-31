@@ -20,6 +20,7 @@ import GlobalObject from './nodejs/globalObject.jsx';
 import Debugging from './nodejs/debugging.jsx';
 import EventLoop from './nodejs/eventLoop.jsx';
 import EventEmitters from './nodejs/eventEmitters.jsx';
+import FileSystem from './nodejs/file-system.jsx';
 
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
@@ -43,6 +44,7 @@ ReactDOM.render((
       <Route path="/nodejs/debugging" component={Debugging} />
       <Route path="/nodejs/eventLoop" component={EventLoop} />
       <Route path="/nodejs/eventEmitters" component={EventEmitters} />
+      <Route path="/nodejs/file-system" component={FileSystem} />
     </Route>
   </Router>
 

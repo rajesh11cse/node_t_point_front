@@ -67,6 +67,10 @@ class NodeJSHome extends React.Component {
                         EventEmitter Objects in NodeJS.</p>
 
                         <p className="totorial_heading">
+                            <a target="_black" href="#/nodejs/file-system">Node.js File-System Module</a><br />
+                        What is file-system(fs) module, Methods of file-system and Uses of file-system.</p>
+
+                        <p className="totorial_heading">
                             <a style={{color:'green'}} href="">MongoDB in Node.js</a><br />
                         Use MongoDb database in your NodeJS application</p>
 

@@ -7,15 +7,15 @@ module.exports = {
 
     // Auth to set password 
     auth: {
-        user: 'nrbdrm@gmail.com',
-        pass: 'nrbdrm@2011',
+        user: '*********@gmail.com',
+        pass: '***********',
     },
 
     // From address to set password 
-    defaultFromAddress: 'Node T Point nrbdrm@gmail.com',
+    defaultFromAddress: 'Node T Point ********@gmail.com',
 
     // to 
-    to : 'rajeshkumar11cse@gmail.com',
+    to : '*********@gmail.com',
 
     // Subject of mail
     subject: 'Message from nodetpoint user',
