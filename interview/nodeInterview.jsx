@@ -121,12 +121,24 @@ class NodeInterview extends React.Component {
                              <p className="interview_question">
                                 <span>(10) What is difference between synchronous and asynchronous method of fs module?</span>
                                 <p> 
-                              Every method in fs module have synchronous as well as asynchronous form. Asynchronous methods takes 
-                              a last parameter as completion function callback and first parameter of the callback function is error. It 
-                              is preferred to use asynchronous method instead 
-                              of synchronous method as former never block the program execution where the latter one does.
+                              Every method in the fs module may be a synchronous or asynchronous forms. Asynchronous 
+                              methods take the last parameter as the completion function callback and the first parameter 
+                              of the callback function as error. So It is always better to use an asynchronous method instead 
+                              of a synchronous method, becouse asynchronous mothod never blocks a program during its execution, 
+                              whereas synchronous does.
                                </p>
-                               <p>You can read more here : <a href="#/nodejs/fs">Node.js file-system(fs) module</a></p>
+                               <p>You can read more here : <a href="#/nodejs/file-system">Node.js file-system(fs) module</a></p>
+                            </p>
+
+                              <p className="interview_question">
+                                <span>(11) What is a blocking code??</span>
+                                <p> 
+                                In node.js “non-blocking” means that its IO is non-blocking.  Node uses “libuv” to handle 
+                                its IO in a platform-agnostic way. On windows, it uses completion ports for unix it uses 
+                                epoll or kqueue etc. So, it makes a non-blocking request and upon a request, 
+                                it queues it within the event loop which call the JavaScript ‘callback’ on the main JavaScript thread.
+                               </p>
+                               <p>You can read more here : <a href="#/nodejs/file-system">Node.js file-system(fs) module</a></p>
                             </p>
 
 

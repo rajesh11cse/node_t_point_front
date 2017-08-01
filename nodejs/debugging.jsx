@@ -38,13 +38,13 @@ class Debugging extends React.Component {
                                 <p>npm install -g node-inspector</p>
                             </p>
 
-                            <p>Let's' look at a file server.js with the folowing code.</p>
+                            <p>Let's' look at a file server.js with the following code.</p>
                             <p><i style={{ backgroundColor: '#e8e8e8' }}>server.js</i></p>
                             <p>
                                 <img className="thumbnail" width="100%" src="./img/debugger3.png" alt="Image Error" />
                             </p>
                              <p>
-                                We have to debug above code using node-inspector. So for that run the folowing command.
+                                We have to debug above code using node-inspector. So for that run the following command.
                             </p>
                              <p>
                                 <img className="thumbnail" width="100%" src="./img/debugger1.png" alt="Image Error" />

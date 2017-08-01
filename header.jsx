@@ -132,10 +132,10 @@ class Header extends React.Component {
 
                 <section className="row">
                     <div className="col-md-12">
-                        <div className="col-md-12 homePage">
+                        <div className="col-md-9 homePage">
                             {this.props.children}
                         </div>
-                        <div className="col-md-2" style={{ marginTop: '20px' }}>
+                        <div className="col-md-3" style={{ marginTop: '20px' }}>
                             {/*Ads here..*/}
                             {/*<img className="col-md-12" src="http://webneel.com/sites/default/files/images/project/Creative%20Christmas%20Ads%20(8).jpg" alt="Ads not found"/>*/}
                         </div>
