@@ -34,7 +34,7 @@ class Callback extends React.Component {
                         <p className="totorial_question">
                             <h2>Node.js Blocking</h2>
                             <p>
-                                Bloacking means hold the current task untill it completes or Blocking
+                                Blocking means hold the current task untill it completes or Blocking
                                 refers to operations that block further execution until that operation finishes. Let's' look at the example, update file main.js with the following code and run it by command 'node main.js'.
                             </p>
                             <p>
@@ -105,6 +105,9 @@ class Callback extends React.Component {
                             </p>
                             <p>
                                 <img className="thumbnail" width="100%" src="./img/callback5.png" alt="Image Error" />
+                            </p>
+                             <p>
+                                In above given code, http.createServer() method will be called at initial then createServerCallback then someDataParser and then moreDataParser. So now the code structure does not look like a pyramid shape.
                             </p>
                         </p>
 

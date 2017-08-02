@@ -1,6 +1,12 @@
 import React from 'react';
 class NodeInterview extends React.Component {
     render() {
+        $('a.someclass').click(function (e) {
+            // Special stuff to do when this link is clicked...
+
+            // Cancel the default action
+            e.preventDefault();
+        });
         return (
             <div>
                 <article>
@@ -41,26 +47,26 @@ class NodeInterview extends React.Component {
                             <p className="interview_question">
                                 <span>(3) Where can we use node.js?</span>
                                 <p>
-                                   Node.js can be used for the following purposes: 
+                                    Node.js can be used for the following purposes:
                                    <ol>
-                                       <li>Web applications (especially real-time web apps)</li>
-                                       <li>Network applications</li>
-                                       <li>Distributed systems</li>
-                                       <li>General purpose applications</li>
-                                   </ol>
+                                        <li>Web applications (especially real-time web apps)</li>
+                                        <li>Network applications</li>
+                                        <li>Distributed systems</li>
+                                        <li>General purpose applications</li>
+                                    </ol>
                                 </p>
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(4) What is the advantage of using node.js?</span>
                                 <p>
-                                   The following are some advantage of NodeJs.
+                                    The following are some advantage of NodeJs.
                                    <ol>
-                                       <li>Node.js is an open source, cross-platform runtime environment for server-side and networking applications</li>
-                                       <li>Easy to install and run locally</li>
-                                       <li>Generally fast</li>
-                                       <li>Asynchronous everything</li>
-                                   </ol>
+                                        <li>Node.js is an open source, cross-platform runtime environment for server-side and networking applications</li>
+                                        <li>Easy to install and run locally</li>
+                                        <li>Generally fast</li>
+                                        <li>Asynchronous everything</li>
+                                    </ol>
                                     <p>You can read more here : <a href="#/nodejs/introduction">NodeJs Introduction</a></p>
                                 </p>
                             </p>
@@ -68,15 +74,15 @@ class NodeInterview extends React.Component {
                             <p className="interview_question">
                                 <span>(5) What is REPL in context of Node?</span>
                                 <p>
-                                   REPL stands for Read Eval Print Loop. Node.js comes 
+                                    REPL stands for Read Eval Print Loop. Node.js comes
                                    with bundled REPL environment which is a simple program that accepts the commands,
                                    evaluates the commands, and prints their results.
                                    <ol>
-                                       <li>Read</li>
-                                       <li>Eval</li>
-                                       <li>Print</li>
-                                       <li>Loop</li>
-                                   </ol>
+                                        <li>Read</li>
+                                        <li>Eval</li>
+                                        <li>Print</li>
+                                        <li>Loop</li>
+                                    </ol>
                                     <p>You can read more here : <a href="#/nodejs/repl">Node.js REPL</a></p>
                                 </p>
                             </p>
@@ -84,66 +90,73 @@ class NodeInterview extends React.Component {
                             <p className="interview_question">
                                 <span>(6) What are the two types of API functions in Node.js?</span>
                                 <p>
-                                   Two types of API functions in Node.js are
+                                    Two types of API functions in Node.js are
                                    <ol>
-                                       <li>Asynchronous, non-blocking functions</li>
-                                       <li>Synchronous, blocking functions</li>
-                                   </ol>
+                                        <li>Asynchronous, non-blocking functions</li>
+                                        <li>Synchronous, blocking functions</li>
+                                    </ol>
                                 </p>
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(7) What is control flow function?</span>
                                 <p>
-                                   A control flow function is a lightweight, generic piece of code which 
+                                    A control flow function is a lightweight, generic piece of code which
                                    runs in between several asynchronous function calls and which take care of the necessary housekeeping to.
                                 </p>
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(8) Explain the steps how “Control Flow” controls the functions calls?</span>
-                                <ol>
-                                    <li>Control the order of execution</li>
-                                    <li>Collect data</li>
-                                    <li>Limit concurrency</li>
-                                    <li>Call the next step in program</li>
-                                </ol>
+                                <p>
+                                    <ol>
+                                        <li>Control the order of execution</li>
+                                        <li>Collect data</li>
+                                        <li>Limit concurrency</li>
+                                        <li>Call the next step in program</li>
+                                    </ol>
+                                </p>
+
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(9) Why Node.js is single threaded?</span>
-                                <p> 
-                               For async processing, Node.js was created explicitly as an experiment. It 
+                                <p>
+                                    For async processing, Node.js was created explicitly as an experiment. It
                                is believed that more performance and scalability can be achieved by doing async processing on a
                                single thread under typical web loads than the typical thread based implementation.
                                </p>
                             </p>
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(10) What is difference between synchronous and asynchronous method of fs module?</span>
-                                <p> 
-                              Every method in the fs module may be a synchronous or asynchronous forms. Asynchronous 
-                              methods take the last parameter as the completion function callback and the first parameter 
-                              of the callback function as error. So It is always better to use an asynchronous method instead 
-                              of a synchronous method, becouse asynchronous mothod never blocks a program during its execution, 
+                                <p>
+                                    Every method in the fs module may be a synchronous or asynchronous forms. Asynchronous
+                              methods take the last parameter as the completion function callback and the first parameter
+                              of the callback function as error. So It is always better to use an asynchronous method instead
+                              of a synchronous method, becouse asynchronous mothod never blocks a program during its execution,
                               whereas synchronous does.
                                </p>
-                               <p>You can read more here : <a href="#/nodejs/file-system">Node.js file-system(fs) module</a></p>
+                                <p>You can read more here : <a href="#/nodejs/file-system">Node.js file-system(fs) module</a></p>
                             </p>
 
-                              <p className="interview_question">
-                                <span>(11) What is a blocking code??</span>
-                                <p> 
-                                In node.js “non-blocking” means that its IO is non-blocking.  Node uses “libuv” to handle 
-                                its IO in a platform-agnostic way. On windows, it uses completion ports for unix it uses 
-                                epoll or kqueue etc. So, it makes a non-blocking request and upon a request, 
-                                it queues it within the event loop which call the JavaScript ‘callback’ on the main JavaScript thread.
+                            <p className="interview_question">
+                                <span>(11) What is a blocking code?</span>
+                                <p>
+                                    Blocking means hold the current task untill it completes or Blocking refers to operations that block further execution until that operation finishes.
                                </p>
-                               <p>You can read more here : <a href="#/nodejs/file-system">Node.js file-system(fs) module</a></p>
+                                <p>You can read more here : <a href="#/nodejs/callback">Node.js Callbacks</a></p>
+                            </p>
+
+                             <p className="interview_question">
+                                <span>(12) What does it mean “non-blocking” in node.js?</span>
+                                <p>
+                                    Non-blocking refers to code that doesn't block execution or we can say a non-blocking operation does not wait for I/O to complete any task.
+                               </p>
+                                <p>You can read more here : <a href="#/nodejs/callback">Node.js Callbacks</a></p>
                             </p>
 
 
                             <ol>
-                                <li>What does it mean “non-blocking” in node.js?  </li>
                                 <li>What is an event loop in Node.js ? </li>
                                 <li>What is the difference between Node.js vs Ajax?  </li>
                                 <li> What is ‘Callback’ in node.js?  </li>
@@ -152,8 +165,8 @@ class NodeInterview extends React.Component {
                                 <li> What is a blocking code?    </li>
                                 <li>How Does Node Differ From Other Frameworks?  </li>
                                 <li>What is Globals in Nodejs?</li>
-                                 <li>What is Buffer class in Node?  </li>
-                                 <li>What is environmental variables in node.js?</li>
+                                <li>What is Buffer class in Node?  </li>
+                                <li>What is environmental variables in node.js?</li>
                                 <li>What is the Use of underscore in Nodejs? </li>
                                 <li>How to load HTML in Nodejs?  </li>
                                 <li>How to load HTML in Nodejs?  </li>
