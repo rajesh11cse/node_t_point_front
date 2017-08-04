@@ -1,8 +1,20 @@
 import React from 'react';
+import {
+  LiveProvider,
+  LiveEditor,
+  LiveError,
+  LivePreview
+} from 'react-live'
 class NodeJsIntroduction extends React.Component {
     render() {
         return (
             <div>
+
+                <LiveProvider mountStylesheet="false" code="<a href='#/nodejs/home' className'btn btn-default btn-sm next-pre-btn'></a>">
+  <LiveEditor  />
+  <LiveError />
+  <LivePreview />
+</LiveProvider>
                 <article>
                     <div className="col-md-12">
                         <a href="#/nodejs/home" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
@@ -15,7 +27,7 @@ class NodeJsIntroduction extends React.Component {
                                 for building highly scalable server-side application using JavaScript.
                             </p>
                             <p>
-                                Node.js is basicaly used for building applications like command line application, web application,
+                                Node.js is basically used for building applications like command line application, web application,
                                 real-time chat application, REST API server etc. However, it is mainly used to build network programs like web servers,
                                 similar to PHP, Java, or ASP.NET.
                             </p>
@@ -40,8 +52,8 @@ class NodeJsIntroduction extends React.Component {
                                 <p>Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
                             </ul>
                             <i><strong>Note : </strong>
-                                Here dont't confused that Node.js is a web server like Apache. Node.js provides us a way to execute
-                             the code. It is javascript runtime environment. Node.js gives us the facliity to create an HTTP server and host our application on the same.
+                                Here don't confused that Node.js is a web server like Apache. Node.js provides us a way to execute
+                             the code. It is javascript runtime environment. Node.js gives us the facility to create an HTTP server and host our application on the same.
                         </i>
                         </p>
 
@@ -72,7 +84,7 @@ class NodeJsIntroduction extends React.Component {
                         <p className="totorial_question">
                             <h2 style={{ color: '#605e5e' }}>NodeJs Concepts</h2>
                             <p>
-                                The following diagram depicts some important parts of Node.js which we will discuss in detail in upcomming chapters.
+                                The following diagram depicts some important parts of Node.js which we will discuss in detail in upcoming chapters.
                             </p>
                             <img src="https://www.tutorialspoint.com/nodejs/images/nodejs_concepts.jpg" alt="Image Error" />
                         </p>
