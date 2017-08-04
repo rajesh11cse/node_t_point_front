@@ -34,7 +34,7 @@ class NPM extends React.Component {
                                 <p>console.log(__dirname)</p>
                             </p>
                             <p>
-                                Open commad window and use the following command.
+                                Open command window and use the following command.
                             </p>
                              <p className="text-code">
                                 <p>$node node app.js </p>

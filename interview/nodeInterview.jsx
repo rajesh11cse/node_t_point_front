@@ -154,36 +154,92 @@ class NodeInterview extends React.Component {
                                </p>
                                 <p>You can read more here : <a href="#/nodejs/callback">Node.js Callbacks</a></p>
                             </p>
+                           
+                             <p className="interview_question">
+                                <span>(13) What is an event loop in Node.js?</span>
+                                <p>
+                                    The Node.js event loop runs under a single thread, this means the application code you write is evaluated on a single thread. Nodejs itself uses many threads underneath through libuv, but you never have to deal with with those when writing nodejs code.
+                                </p>
+                                <p>You can read more here : <a href="#/nodejs/eventLoop">Node JS Architecture</a></p>
+                            </p>
+
+                             <p className="interview_question">
+                                <span>(14) WWhat is the difference between Node.js vs Ajax?</span>
+                                <p>
+                                    NodeJS is a server-side platform for developing client-server applications while Ajax is a client-side scripting technique
+                                </p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(15) What is ‘Callback’ in node.js?</span>
+                                <p>
+                                    A callback is a function to be executed after another function is executed. Callback is called once the asynchronous operation has been completed
+                                </p>
+                                <p>You can read more here : <a href="#/nodejs/callback">Node JS Callbacks</a></p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(16) What are Error First Callbacks in Node.js?</span>
+                                <p>
+                                    Node.js core modules follow a standard signature for its callback handlers and usually the first argument is an optional error object. And if there is no error, then the argument defaults to null or undefined, So the first argument is always an error object, where the user needs to check if something is wrong. See in the below given code.
+                                </p>
+                                <p>
+                                    <img className="thumbnail" width="100%" src="./img/callback3.png" alt="Image Error" />
+                                </p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(17) What is callback hell?</span>
+                                <p>
+                                    In nodejs callback hell is heavily nested callbacks which make the code unreadable, not understandable and difficult to maintain
+                                </p>
+                                <p>You can read more here : <a href="#/nodejs/callback">Node JS Callbacks</a></p>
+                            </p>
+
+                             <p className="interview_question">
+                                <span>(18) What is the biggest drawback of Node.js? </span>
+                                <p>
+                                   The biggest drawback is the fact that it is challenging to have one process with a single thread to scale up on multi core servers.
+                                </p>
+                            </p> 
+
+                              <p className="interview_question">
+                                <span>(19) How Does Node Differ From Other Frameworks?js? </span>
+                                <p>
+                                   One major difference between Node and other server-side technologies is Node’s use of a single thread and asynchronous architecture. Many other server-side technologies are multi-threaded and synchronous, meaning that threads can be blocked while waiting for replies from the database. In NodeSJ each request creates a new thread from a limited pool based on system RAM usage. Node’s asynchronous design allows it to handle a large number of concurrent connections with high throughput on a single-thread, which makes it highly scalable. Node is not meant as a replacement for other technology stacks, but it can provide scalability and increased performance to applications which fit its purpose. Some examples of application types which can benefit from using Node are REST APIs, Chat applications and Real-Time Tracking applications (Brokerage trading dashboards, real-time user statistics, etc.) Node’s homepage describes it as “lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.” The applications above fit that description well and can take advantage of Node’s features.
+                                </p>
+                            </p> 
+                             <p className="interview_question">
+                                <span>(20) What is Globals in Nodejs?</span>
+                                <p>
+                                   Node.js global objects are global in nature and they are available in all modules. 
+                                    We do not need to include these objects in our application and we do not need to install 
+                                    them explicitly using NPM or whatever, rather we can use them directly in the application.
+                                    These objects are modules, functions, 
+                                    strings and object itself.
+                                </p>
+                                 <p>You can read more here : <a href="#/nodejs/globalObject">Node JS Global Objects</a></p>
+                            </p> 
 
 
                             <ol>
-                                <li>What is an event loop in Node.js ? </li>
-                                <li>What is the difference between Node.js vs Ajax?  </li>
-                                <li> What is ‘Callback’ in node.js?  </li>
-                                <li> What are Error First Callbacks in Node.js  </li>
-                                <li> What is callback hell?    </li>
-                                <li> What is a blocking code?    </li>
-                                <li>How Does Node Differ From Other Frameworks?  </li>
-                                <li>What is Globals in Nodejs?</li>
                                 <li>What is Buffer class in Node?  </li>
                                 <li>What is environmental variables in node.js?</li>
                                 <li>What is the Use of underscore in Nodejs? </li>
                                 <li>How to load HTML in Nodejs?  </li>
-                                <li>How to load HTML in Nodejs?  </li>
-                                <li> What is Event Loop and Event Emitter ? </li>
-                                <li>What are Event listeners ?</li>
+                                <li> What is Event Loop and Event Emitter? </li>
+                                <li>What are Event listeners?</li>
                                 <li>What is npm?</li>
                                 <li>What is Package.json?  </li>
-                                <li>What is Package.json?  </li>
                                 <li>What is file-system or fs in Node?  </li>
-                                <li>What are streams?  and types of streams ?</li>
+                                <li>What are streams?  and types of streams?</li>
                                 <li>What is Chaining in Node?  </li>
                                 <li>What is the difference between setTimeout and setInterval function?  </li>
-                                <li>Can you create Http Server in Node.js, explain with code ?</li>
-                                <li>Can you create Http Server in Node.js, explain with code ?</li>
-                                <li>How to load HTML in Nodejs ?</li>
-                                <li>What is the difference between process.nextTick() and setImmediate() ?</li>
-                                <li>What do you mean by the term I/O ?</li>
+                                <li>Can you create Http Server in Node.js, explain with code?</li>
+                                <li>Can you create Http Server in Node.js, explain with code?</li>
+                                <li>How to load HTML in Nodejs?</li>
+                                <li>What is the difference between process.nextTick() and setImmediate()?</li>
+                                <li>What do you mean by the term I/O?</li>
                                 <li>Explain Web Server?</li>
 
                                 {/*http://www.lazyquestion.com/interview-questions-and-answer/nodejs?page=5*/}

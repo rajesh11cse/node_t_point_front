@@ -67,9 +67,12 @@ class NodeJSHome extends React.Component {
                         EventEmitter Objects in NodeJS.</p>
 
                         <p className="totorial_heading">
+                            <a target="_black" href="#/nodejs/buffers">Node.js Buffers</a><br />
+                        What is Buffer, Creating, Reading and Writing buffers.</p>
+
+                        <p className="totorial_heading">
                             <a target="_black" href="#/nodejs/file-system">Node.js File-System Module</a><br />
                         What is file-system(fs) module, Methods of file-system and Uses of file-system.</p>
-
                          <p className="totorial_heading">
                             <a target="_black" href="#/nodejs/callback">Node.js Callbacks</a><br />
                         What is Callback, blocking, non-bloacking and callback hell</p>
