@@ -147,15 +147,15 @@ class NodeInterview extends React.Component {
                                 <p>You can read more here : <a href="#/nodejs/callback">Node.js Callbacks</a></p>
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(12) What does it mean “non-blocking” in node.js?</span>
                                 <p>
                                     Non-blocking refers to code that doesn't block execution or we can say a non-blocking operation does not wait for I/O to complete any task.
                                </p>
                                 <p>You can read more here : <a href="#/nodejs/callback">Node.js Callbacks</a></p>
                             </p>
-                           
-                             <p className="interview_question">
+
+                            <p className="interview_question">
                                 <span>(13) What is an event loop in Node.js?</span>
                                 <p>
                                     The Node.js event loop runs under a single thread, this means the application code you write is evaluated on a single thread. Nodejs itself uses many threads underneath through libuv, but you never have to deal with with those when writing nodejs code.
@@ -163,8 +163,8 @@ class NodeInterview extends React.Component {
                                 <p>You can read more here : <a href="#/nodejs/eventLoop">Node JS Architecture</a></p>
                             </p>
 
-                             <p className="interview_question">
-                                <span>(14) WWhat is the difference between Node.js vs Ajax?</span>
+                            <p className="interview_question">
+                                <span>(14) What is the difference between Node.js vs Ajax?</span>
                                 <p>
                                     NodeJS is a server-side platform for developing client-server applications while Ajax is a client-side scripting technique
                                 </p>
@@ -196,37 +196,135 @@ class NodeInterview extends React.Component {
                                 <p>You can read more here : <a href="#/nodejs/callback">Node JS Callbacks</a></p>
                             </p>
 
-                             <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(18) What is the biggest drawback of Node.js? </span>
                                 <p>
-                                   The biggest drawback is the fact that it is challenging to have one process with a single thread to scale up on multi core servers.
+                                    The biggest drawback is the fact that it is challenging to have one process with a single thread to scale up on multi core servers.
                                 </p>
-                            </p> 
+                            </p>
 
-                              <p className="interview_question">
+                            <p className="interview_question">
                                 <span>(19) How Does Node Differ From Other Frameworks?js? </span>
                                 <p>
-                                   One major difference between Node and other server-side technologies is Node’s use of a single thread and asynchronous architecture. Many other server-side technologies are multi-threaded and synchronous, meaning that threads can be blocked while waiting for replies from the database. In NodeSJ each request creates a new thread from a limited pool based on system RAM usage. Node’s asynchronous design allows it to handle a large number of concurrent connections with high throughput on a single-thread, which makes it highly scalable. Node is not meant as a replacement for other technology stacks, but it can provide scalability and increased performance to applications which fit its purpose. Some examples of application types which can benefit from using Node are REST APIs, Chat applications and Real-Time Tracking applications (Brokerage trading dashboards, real-time user statistics, etc.) Node’s homepage describes it as “lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.” The applications above fit that description well and can take advantage of Node’s features.
+                                    One major difference between Node and other server-side technologies is Node’s use of a single thread and asynchronous architecture. Many other server-side technologies are multi-threaded and synchronous, meaning that threads can be blocked while waiting for replies from the database. In NodeSJ each request creates a new thread from a limited pool based on system RAM usage. Node’s asynchronous design allows it to handle a large number of concurrent connections with high throughput on a single-thread, which makes it highly scalable. Node is not meant as a replacement for other technology stacks, but it can provide scalability and increased performance to applications which fit its purpose. Some examples of application types which can benefit from using Node are REST APIs, Chat applications and Real-Time Tracking applications (Brokerage trading dashboards, real-time user statistics, etc.) Node’s homepage describes it as “lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.” The applications above fit that description well and can take advantage of Node’s features.
                                 </p>
-                            </p> 
-                             <p className="interview_question">
+                            </p>
+                            <p className="interview_question">
                                 <span>(20) What is Globals in Nodejs?</span>
                                 <p>
-                                   Node.js global objects are global in nature and they are available in all modules. 
-                                    We do not need to include these objects in our application and we do not need to install 
+                                    Node.js global objects are global in nature and they are available in all modules.
+                                    We do not need to include these objects in our application and we do not need to install
                                     them explicitly using NPM or whatever, rather we can use them directly in the application.
-                                    These objects are modules, functions, 
+                                    These objects are modules, functions,
                                     strings and object itself.
                                 </p>
-                                 <p>You can read more here : <a href="#/nodejs/globalObject">Node JS Global Objects</a></p>
-                            </p> 
+                                <p>You can read more here : <a href="#/nodejs/globalObject">Node JS Global Objects</a></p>
+                            </p>
 
+                            <p className="interview_question">
+                                <span>(21) What is Buffer class in Node?</span>
+                                <p>
+                                    The Buffer class is a global class in Node.js which can be accessed in an application without importing the buffer module.
+                                   <p className="text-code">
+                                        <p><span style={{ color: 'blue' }}>var</span> buffer = <span style={{ color: 'blue' }}>new</span> Buffer(<span style={{ color: 'red' }}>10</span>);</p>
+                                    </p>
+                                </p>
+                                <p>You can read more here : <a href="#/nodejs/buffers">Node JS buffers</a></p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(22) What is environmental variables in node.js?</span>
+                                <p>
+                                    Environment variables are being used to pass credentials to your application. USER_ID and USER_KEY can both be accessed from process.env.USER_ID and process.env.USER_KEY respectively. You don't need to edit them, just access their contents.
+                                   <p className="text-code">
+                                        <p>process.env.ENV_VARIABLE</p>
+                                    </p>
+                                    <p>Where ENV_VARIABLE is the name of the variable you wish to access.</p>
+                                </p>
+                                <p>
+                                    <b>Example :</b> Let's run our application on Development/Production mode respectively.
+                                </p>
+                                <p>
+                                    Before running your app, you can do this in console,
+                                   <p className="text-code">
+                                        <p><span style={{ color: 'blue' }}>export</span> NODE_ENV=production</p>
+                                    </p>
+
+
+                                    <p>
+                                        or you can run your app like this:
+                                   <p className="text-code">
+                                            <p>NODE_ENV=production node app.js</p>
+                                        </p>
+                                    </p>
+                                    <p>
+                                        You can also set it in your js file:
+                                   <p className="text-code">
+                                            <p>process.env.NODE_ENV = 'production';</p>
+                                        </p>
+                                    </p>
+
+                                    <p>
+                                        Now using console see the output of the following line of code.
+                                   <p className="text-code">
+                                            <p>console.log(app.get('env'))</p>
+                                        </p>
+                                    </p>
+                                    <p>
+                                        <b>Output :</b>
+                                    </p>
+                                    <p className="text-code">
+                                        <p>production</p>
+                                    </p>
+
+
+                                </p>
+
+                                <p>You can read more here : <a href="https://nodejs.org/api/process.html#process_process_env">Node.js docs</a></p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(23) What is the Use of underscore in Nodejs?</span>
+                                <p>
+                                    This post will help you to understand the use of Underscore (_) in Nodejs. To access the last expression, we have to use the (_) underscore/underline character.
+                                </p>
+                                <p>
+                                    <b>Example1 :</b> Open terminal and type node.
+                                   <p className="text-code">
+                                        <p>node</p>
+                                        <p>></p>
+                                        <p>> num = 10;</p>
+                                        <p>10</p>
+                                        <p>>_-6</p>
+                                        <p>>4</p>
+                                    </p>
+                                    <p>
+                                        In the above code we have first assigned 10 to 'num' and then we have used ' _ -6 ' to actually get the last expression and decremented it by 6.
+                                </p>
+                                </p>
+
+                                <p>
+                                    <b>Example2 :</b>
+                                    <p className="text-code">
+                                        <p>> var num = 10;</p>
+                                        <p>undefined</p>
+                                        <p>>_-6</p>
+                                        <p>>NaN</p>
+                                    </p>
+                                    <p>
+                                        You will get NaN because the result of 'var num = 10' expression is undefined as a variable assignment doesn't return a result when evaluated. So when you are accessing the last expression you will get NaN.
+                                </p>
+                                </p>
+                            </p>
+
+                            <p className="interview_question">
+                                <span>(24) How to load HTML in Nodejs?</span>
+                                <p>
+                                  To load HTML in Nodejs we have to change the Content-type from text/plain to text/html
+                                </p>
+                            </p>
 
                             <ol>
-                                <li>What is Buffer class in Node?  </li>
-                                <li>What is environmental variables in node.js?</li>
-                                <li>What is the Use of underscore in Nodejs? </li>
-                                <li>How to load HTML in Nodejs?  </li>
                                 <li> What is Event Loop and Event Emitter? </li>
                                 <li>What are Event listeners?</li>
                                 <li>What is npm?</li>

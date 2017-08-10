@@ -1,4 +1,5 @@
 import React from 'react';
+import Highlight from 'react-highlight';
 import {
   LiveProvider,
   LiveEditor,
@@ -9,12 +10,15 @@ class NodeJsIntroduction extends React.Component {
     render() {
         return (
             <div>
-
-                <LiveProvider mountStylesheet="false" code="<a href='#/nodejs/home' className'btn btn-default btn-sm next-pre-btn'></a>">
-  <LiveEditor  />
-  <LiveError />
-  <LivePreview />
-</LiveProvider>
+            <LiveProvider code={"<h2>Hello world</h2>"}>
+            <LiveEditor />
+            <LiveError />
+            </LiveProvider>
+                        
+            <Highlight className='language-name-of-snippet'>
+                {"<h2 style={{ color: '#605e5e' }}>What is Node.js?</h2>"}{"\n"}
+                {"<h2 style={{ color: '#605e5e' }}>What is Node.js?</h2>"}{"\n"}
+            </Highlight>
                 <article>
                     <div className="col-md-12">
                         <a href="#/nodejs/home" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>

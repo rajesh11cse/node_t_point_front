@@ -4,7 +4,6 @@
     color: #fff;
     letter-spacing: 2px;
 }
-
 /*https://stackoverflow.com/questions/16625972/change-color-of-bootstrap-navbar-on-hover-link*/
 .navbar-default .navbar-nav > li > a:hover{
     background-color:#f43333;
