@@ -1,12 +1,6 @@
 import React from 'react';
 class NodeInterview extends React.Component {
     render() {
-        $('a.someclass').click(function (e) {
-            // Special stuff to do when this link is clicked...
-
-            // Cancel the default action
-            e.preventDefault();
-        });
         return (
             <div>
                 <article>
@@ -160,7 +154,7 @@ class NodeInterview extends React.Component {
                                 <p>
                                     The Node.js event loop runs under a single thread, this means the application code you write is evaluated on a single thread. Nodejs itself uses many threads underneath through libuv, but you never have to deal with with those when writing nodejs code.
                                 </p>
-                                <p>You can read more here : <a href="#/nodejs/eventLoop">Node JS Architecture</a></p>
+                                <p>You can read more here : <a href="#/nodejs/eventLoop">NodeJs Architecture</a></p>
                             </p>
 
                             <p className="interview_question">
@@ -175,7 +169,7 @@ class NodeInterview extends React.Component {
                                 <p>
                                     A callback is a function to be executed after another function is executed. Callback is called once the asynchronous operation has been completed
                                 </p>
-                                <p>You can read more here : <a href="#/nodejs/callback">Node JS Callbacks</a></p>
+                                <p>You can read more here : <a href="#/nodejs/callback">NodeJs Callbacks</a></p>
                             </p>
 
                             <p className="interview_question">
@@ -193,7 +187,7 @@ class NodeInterview extends React.Component {
                                 <p>
                                     In nodejs callback hell is heavily nested callbacks which make the code unreadable, not understandable and difficult to maintain
                                 </p>
-                                <p>You can read more here : <a href="#/nodejs/callback">Node JS Callbacks</a></p>
+                                <p>You can read more here : <a href="#/nodejs/callback">NodeJs Callbacks</a></p>
                             </p>
 
                             <p className="interview_question">
@@ -218,7 +212,7 @@ class NodeInterview extends React.Component {
                                     These objects are modules, functions,
                                     strings and object itself.
                                 </p>
-                                <p>You can read more here : <a href="#/nodejs/globalObject">Node JS Global Objects</a></p>
+                                <p>You can read more here : <a href="#/nodejs/globalObject">NodeJs Global Objects</a></p>
                             </p>
 
                             <p className="interview_question">
@@ -229,7 +223,7 @@ class NodeInterview extends React.Component {
                                         <p><span style={{ color: 'blue' }}>var</span> buffer = <span style={{ color: 'blue' }}>new</span> Buffer(<span style={{ color: 'red' }}>10</span>);</p>
                                     </p>
                                 </p>
-                                <p>You can read more here : <a href="#/nodejs/buffers">Node JS buffers</a></p>
+                                <p>You can read more here : <a href="#/nodejs/buffers">NodeJs buffers</a></p>
                             </p>
 
                             <p className="interview_question">
@@ -324,16 +318,51 @@ class NodeInterview extends React.Component {
                                 </p>
                             </p>
 
+                             <p className="interview_question">
+                                <span>(25) What is Event Emitter?</span>
+                                <p>
+                                    Node.js allows us to create and handle custom events easily by using events module. Event module includes EventEmitter class which can be used to raise and handle custom events.
+
+                                    <p>You can read more here : <a href="#/nodejs/eventEmitters">NodeJS Architecture</a></p>
+                                </p>
+                            </p>
+
+                              <p className="interview_question">
+                                <span>(26) What are Event listeners?</span>
+                                <p>
+                                    Event listeners are similar to callback functions but are associated with some event. For example when a server listens to http request on a given port a event will be generated and to specify http server has received and will invoke corresponding event listener. Basically, Event listener's are also callbacks for a corresponding event.
+
+                                    <p>You can read more here : <a href="#/nodejs/eventLoop">NodeJS EventLoop</a></p>
+                                </p>
+                            </p>
+
+                             <p className="interview_question">
+                                <span>(27) What is npm?</span>
+                                <p>
+                                    NPM stands for Node.js Package Management. It is a Command line utility. It comes with Node.js platform and allows us to install various packages for Node.js. This package manages and supports various commands to install and remove the modules
+
+                                    <p>You can read more here : <a href="#/nodejs/npm">NodeJS NPM</a></p>
+                                </p>
+                            </p>
+
+                             <p className="interview_question">
+                                <span>(27) What is Package.json?</span>
+                                <p>
+                                   Package.json is present in the root directory of any Node application/module and is used to define the properties of a package. 
+                                </p>
+                            </p>
+                            <p className="interview_question">
+                                <span>(28) What is ile-system or fs in Node?</span>
+                                <p>
+                                   The Node.js file system module allow you to work with the file system on your computer systems. Where you will be able to open a file, read a file and write a file and many more operations.
+                                </p>
+                                 <p>You can read more here : <a href="#/nodejs/npm">NodeJS FS Modules</a></p>
+                            </p>
+
                             <ol>
-                                <li> What is Event Loop and Event Emitter? </li>
-                                <li>What are Event listeners?</li>
-                                <li>What is npm?</li>
-                                <li>What is Package.json?  </li>
-                                <li>What is file-system or fs in Node?  </li>
                                 <li>What are streams?  and types of streams?</li>
                                 <li>What is Chaining in Node?  </li>
                                 <li>What is the difference between setTimeout and setInterval function?  </li>
-                                <li>Can you create Http Server in Node.js, explain with code?</li>
                                 <li>Can you create Http Server in Node.js, explain with code?</li>
                                 <li>How to load HTML in Nodejs?</li>
                                 <li>What is the difference between process.nextTick() and setImmediate()?</li>
