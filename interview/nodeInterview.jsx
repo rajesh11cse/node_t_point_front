@@ -352,7 +352,7 @@ class NodeInterview extends React.Component {
                                 </p>
                             </p>
                             <p className="interview_question">
-                                <span>(28) What is ile-system or fs in Node?</span>
+                                <span>(28) What is file-system or fs in Node?</span>
                                 <p>
                                    The Node.js file system module allow you to work with the file system on your computer systems. Where you will be able to open a file, read a file and write a file and many more operations.
                                 </p>

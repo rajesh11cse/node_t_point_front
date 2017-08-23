@@ -6,7 +6,7 @@ class Callback extends React.Component {
                 <article>
                     <div className="col-md-12">
                         <a href="#/nodejs/environmentSetup" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        <a href="#/nodejs/repl" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
+                        <a href="#/nodejs/streams" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                         <p className="totorial_question">
                             <h2>Node.js Callbacks</h2>
                             <p>
@@ -112,7 +112,7 @@ class Callback extends React.Component {
                         </p>
 
                         <a href="#/nodejs/environmentSetup" className="btn btn-default btn-sm next-pre-btn ">{'<<'} Pre Page</a>
-                        <a href="#/nodejs/repl" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
+                        <a href="#/nodejs/streams" className="pull-right btn btn-default btn-sm next-pre-btn ">Next Page >></a>
                     </div>
                 </article>
             </div>
